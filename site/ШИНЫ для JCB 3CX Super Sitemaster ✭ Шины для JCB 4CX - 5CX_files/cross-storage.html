@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)https://lpt-crm.online/LPT_widget/cross-storage.html?r=1610880836755 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <script>
+        var getCookie = function(name, defaultValue) {
+            var cookie = ' ' + document.cookie,
+                search = ' ' + name + '=',
+                setStr = defaultValue,
+                offset = 0,
+                end    = 0;
+
+            if (cookie.length > 0) {
+                offset = cookie.indexOf(search);
+
+                if (offset !== -1) {
+                    offset += search.length;
+                    end = cookie.indexOf(';', offset);
+
+                    if (end === -1)
+                        end = cookie.length;
+
+                    setStr = unescape(cookie.substring(offset, end));
+                }
+            }
+
+            return setStr;
+        };
+
+        var setCookie = function(name, value, expires, path, domain, secure) {
+            var _SFLoad, key_for_ref, now, time;
+            _SFLoad = function (i, u, r) {
+                var time;
+                var now;
+                setTimeout((function () {
+                    var d, f, h, s;
+                    d       = document;
+                    f       = d.getElementsByTagName('script')[0];
+                    s       = d.createElement('script');
+                    h       = escape(d.referrer);
+                    s.type  = 'text/javascript';
+                    s.async = true;
+                    s.src   = u + '?dom=' + location.hostname + '&ref=' + r;
+                    f.parentNode.insertBefore(s, f);
+                }), 1);
+            };
+
+            path    = '/';
+
+            if (expires > 0) {
+                var today = new Date();
+                var curDays = new Date();
+                curDays.setTime(today.getTime() + 3600000 * 24 * expires);
+                expires = curDays.toUTCString();
+            } else {
+                var yearAsUnixTime = 3600 * 24 * 30 * 12 * 1000;
+                now       = new Date;
+                time      = now.getTime();
+                time += yearAsUnixTime;
+                now.setTime(time);
+                expires = now.toUTCString();
+            }
+
+            document.cookie = name + '=' + escape(value) + (expires ? '; expires=' + expires : '') + '; path=/' + (domain ? '; domain=' + domain : '') + '; SameSite=None; Secure';
+        };
+
+        window.addEventListener('message', function(event) {
+            if (typeof event.data == 'object') {
+                if (event.data.type == 'getCookie') {
+                    window.parent.postMessage({
+                        type: 'getCookie',
+                        data: getCookie(event.data.name),
+                        requestId: event.data.requestId
+                    }, "*")
+                }
+
+                if (event.data.type == 'setCookie') {
+                    setCookie(event.data.name, event.data.data, undefined, undefined, undefined, true);
+                }
+
+                if (event.data.type == 'getItem') {
+                    window.parent.postMessage({
+                        type: 'getItem',
+                        data: localStorage.getItem(event.data.name),
+                        requestId: event.data.requestId
+                    }, "*")
+                }
+
+                if (event.data.type == 'setItem') {
+                    localStorage.setItem(event.data.name, event.data.data);
+                }
+            }
+        });
+
+        window.parent.postMessage({
+            type: 'crossStorageLoaded',
+        }, "*")
+    </script>
+</head>
+<body>
+
+
+</body></html>
