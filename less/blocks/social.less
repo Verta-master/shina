@@ -1,0 +1,18 @@
+.social__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.social__link {
+  display: block;
+  padding: 10px;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @blue;
+    .transition();
+  }
+}

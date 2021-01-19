@@ -1,0 +1,32 @@
+.info {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.info__wrap {
+  padding: 30px;
+  background-color: #fff;
+  
+  .title-3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    .reset();
+    list-style: none;
+    
+    li {
+      position: relative;
+      padding-left: 10px;
+      margin-bottom: 10px;
+      
+      &::before {
+        content: "-";
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}

@@ -91,24 +91,10 @@
   padding-left: 20px;
   font-size: 16px;
   
-  &::before {
+  i {
     position: absolute;
-    top: 0;
+    top: 2px;
     left: 0;
-    font-family: 'fabrica';
-  }
-  
-  &--tg::before {
-    content: "\e924";
-  }
-  &--mail::before {
-    content: "\e90a";
-  }
-  &--wa::before {
-    content: "\e928";
-  }
-  &--contacts::before {
-    content: "\e92b";
   }
 }
 
@@ -131,7 +117,8 @@
     top: 0;
     left: 0;
     font-size: 20px;
-    font-family: 'fabrica';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
   }
   
   &--like {
@@ -139,7 +126,7 @@
     height: 20px;
     
     &::before {
-      content: "\e904";
+      content: "\f004";
     }
   }
   
@@ -148,13 +135,14 @@
     height: 20px;
     
     &::before {
-      content: "\e90e";
+      content: "\f038";
+      transform: rotate(90deg);
     }
   }
   
   &--basket {
     &::before {
-      content: "\e900";
+      content: "\f291";
     }
   }
 }
