@@ -5,6 +5,8 @@
   <meta name="robots" content="noindex">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Title</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
@@ -40,7 +42,7 @@
         <div class="search">
           <button type="button" class="search__open"></button>
           <form action="#" class="search__form">
-            <button type="submit" class="search__btn"></button>
+            <button type="submit" class="search__btn"><i class="fas fa-search"></i></button>
             <input type="text" class="search__input" placeholder="Поиск. Начните вводить">
           </form>
         </div>
@@ -51,15 +53,15 @@
         </div>
         <div class="header__block">
           <div>Пишите:</div>
-          <a href="https://t.me/specShina/" class="header__link header__link--tg">Telegram</a>
-          <a href="mailto:mailto:sales@shinajcb.ru" class="header__link header__link--mail">Почта</a>
-          <a href="https://wa.me/79269703253" class="header__link header__link--wa">Whatsapp</a>
+          <a href="https://t.me/specShina/" class="header__link header__link--tg"><i class="fab fa-telegram-plane"></i>Telegram</a>
+          <a href="mailto:mailto:sales@shinajcb.ru" class="header__link header__link--mail"><i class="fas fa-envelope"></i>Почта</a>
+          <a href="https://wa.me/79269703253" class="header__link header__link--wa"><i class="fab fa-whatsapp"></i>Whatsapp</a>
         </div>
         <div class="header__block">
           <div>Приезжайте:</div>
           <p>офис 9:00 до 18:00</p>
           <p>склад 8:00 до 22:00</p>
-          <a href="#" class="header__link header__link--contacts">Контакты</a>
+          <a href="#" class="header__link header__link--contacts"><i class="fas fa-map-marker-alt"></i>Контакты</a>
         </div>
       </div>
     </div>
@@ -698,28 +700,30 @@
     
     <section class="info">
       <div class="wrapper">
-        <h2 class="title-2">Шины для JCB 3CX, JCB 3CX Super Sitemaster, CASE 695, TEREX 970, TEREX 980</h2>
-        <h3 class="title-3">Мы предлагаем надёжные качественные шины по низкой цене</h3>
-        <ul>
-          <li>Мы напрямую сотрудничаем с поставщиками. Нет никаких посредников - ниже цена!</li>
-          <li>Мы имеем собственные склады в Москве и Московской области. В стоимость шины не входит оплата аренды склада!</li>
-          <li>Мы имеем свой автопарк. В стоимость шин не входят расходы на доставку цена ниже!</li>
-          <li>Мы стремимся доставить шины как можно быстрее и можем очень быстро доставить даже 8 больших шин для 4CX за один раз!</li>
-          <li>Строгий контроль и гарантия качества</li>
-          <li>Мы можем привезти шины для JCB 3CX SUPER и шины для JCB 4CX прямо на диске. Это очень удобно, ведь можно быстро поменять колеса и продолжать работать</li>
-        </ul>
+        <div class="info__wrap">
+          <h2 class="title-2">Шины для JCB 3CX, JCB 3CX Super Sitemaster, CASE 695, TEREX 970, TEREX 980</h2>
+          <h3 class="title-3">Мы предлагаем надёжные качественные шины по низкой цене</h3>
+          <ul>
+            <li>Мы напрямую сотрудничаем с поставщиками. Нет никаких посредников - ниже цена!</li>
+            <li>Мы имеем собственные склады в Москве и Московской области. В стоимость шины не входит оплата аренды склада!</li>
+            <li>Мы имеем свой автопарк. В стоимость шин не входят расходы на доставку цена ниже!</li>
+            <li>Мы стремимся доставить шины как можно быстрее и можем очень быстро доставить даже 8 больших шин для 4CX за один раз!</li>
+            <li>Строгий контроль и гарантия качества</li>
+            <li>Мы можем привезти шины для JCB 3CX SUPER и шины для JCB 4CX прямо на диске. Это очень удобно, ведь можно быстро поменять колеса и продолжать работать</li>
+          </ul>
+        </div>
       </div>
     </section>
     
     <section class="map">
-      
+      <iframe data-src="https://yandex.ru/map-widget/v1/?um=constructor%3A9ce7de536aa2993161c84048757a4f5ca245d25fa4d22fd519b18a5884963866&amp;source=constructor" width="100%" height="400" frameborder="0" class="lazy-loaded" src="https://yandex.ru/map-widget/v1/?um=constructor%3A9ce7de536aa2993161c84048757a4f5ca245d25fa4d22fd519b18a5884963866&amp;source=constructor"></iframe>
     </section>
   </main>
   
   <footer class="footer">
     <div class="wrapper">
       <div class="footer__top">
-        <div class="footer__block">
+        <div class="footer__block footer__block--goods">
           <p class="footer__title">У нас есть:</p>
           <ul class="footer__nav">
             <li><a href="#">Шины для экскаваторов-погрузчиков</a></li>
@@ -731,7 +735,7 @@
             <li><a href="#">Запчасти JCB</a></li>
           </ul>
         </div>
-        <div class="footer__block">
+        <div class="footer__block footer__block--brands">
           <p class="footer__title">Наши бренды:</p>
           <ul class="footer__nav">
             <li><a href="#">Запчасти JCB</a></li>
@@ -751,14 +755,14 @@
             <li><a href="#">PETLAS</a></li>
           </ul>
         </div>
-        <div class="footer__block">
+        <div class="footer__block footer__block--address">
           <p class="footer__title">Приезжайте:</p>
           <address>Москва, Никопольская улица, 6с9</address>
           <p class="footer__title">Мы работаем:</p>
           <p>офис 9:00 до 18:00</p>
           <p>склад 8:00 до 22:00</p>
         </div>
-        <div class="footer__block">
+        <div class="footer__block footer__block--contacts">
           <p class="footer__title">На связи даже по выходным:</p>
           <a href="tel:+79253323253" class="footer__link">+7 (925) 332-32-53</a>
           <a href="tel:+78005000642" class="footer__link">+7 (800) 5000-642</a>
@@ -767,25 +771,25 @@
             <p class="footer__title">Мы в социальных сетях:</p>
             <ul class="social__list">
               <li class="social__item">
-                <a href="#" class="social link" title="VKontakte"><i class="fab fa-vk"></i></a>
+                <a href="#" class="social__link" title="VKontakte"><i class="fab fa-vk"></i></a>
               </li>
               <li class="social__item">
-                <a href="#" class="social link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social__link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
               </li>
               <li class="social__item">
-                <a href="#" class="social link" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                <a href="#" class="social__link" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
               </li>
               <li class="social__item">
-                <a href="#" class="social link" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="social__link" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
               </li>
               <li class="social__item">
-                <a href="#" class="social link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social__link" title="Instagram"><i class="fab fa-instagram"></i></a>
               </li>
               <li class="social__item">
-                <a href="#" class="social link" title="Youtube"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social__link" title="Youtube"><i class="fab fa-youtube"></i></a>
               </li>
               <li class="social__item">
-                <a href="#" class="social link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social__link" title="Twitter"><i class="fab fa-twitter"></i></a>
               </li>
             </ul>
           </div>
