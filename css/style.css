@@ -492,11 +492,9 @@ h3,
   margin: 0;
   display: inline-block;
   vertical-align: middle;
-  margin-right: 25px;
+  margin-right: 20px;
 }
 .header {
-  padding-top: 10px;
-  padding-bottom: 10px;
   background-color: rgba(74, 123, 164, 0.01);
 }
 .header__top .wrapper,
@@ -554,12 +552,14 @@ h3,
   font-size: 12px;
 }
 .header__block p {
-  margin: 0;
+  margin-top: 4px;
+  margin-bottom: 0;
   font-size: 16px;
 }
 .header__phone {
   display: block;
-  margin-bottom: 5px;
+  margin-top: 4px;
+  margin-bottom: 15px;
   font-size: 19px;
   font-weight: 700;
 }
@@ -590,6 +590,7 @@ h3,
 }
 .header__link {
   display: block;
+  margin-top: 4px;
   position: relative;
   padding-left: 20px;
   font-size: 16px;
@@ -620,7 +621,7 @@ h3,
 }
 .header__icon::before {
   position: absolute;
-  top: 0;
+  top: -2px;
   left: 0;
   font-size: 20px;
   font-family: 'Font Awesome 5 Free';
@@ -666,7 +667,7 @@ h3,
 }
 .menu__item {
   position: relative;
-  margin-right: 30px;
+  margin-right: 35px;
 }
 .menu__item:hover .menu__drop {
   display: block;
@@ -719,7 +720,7 @@ h3,
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  max-width: 560px;
+  max-width: 450px;
 }
 .search__form {
   display: -webkit-box;
@@ -731,14 +732,14 @@ h3,
   position: relative;
   display: block;
   width: 40px;
-  height: 40px;
+  height: 50px;
   text-align: center;
   line-height: 40px;
 }
 .search__input {
   display: block;
   width: calc(100% - 40px);
-  height: 40px;
+  height: 50px;
   padding: 0 10px;
   background-color: rgba(255, 255, 255, 0);
 }
@@ -799,7 +800,7 @@ h3,
 }
 .promo__block {
   display: block;
-  width: 32%;
+  width: 32.5%;
   padding: 10px;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
@@ -834,6 +835,9 @@ h3,
 .promo__text {
   text-align: center;
 }
+.finder {
+  padding-top: 20px;
+}
 .finder__wrap {
   position: relative;
 }
@@ -859,7 +863,7 @@ h3,
 .finder__link {
   display: block;
   height: 100%;
-  padding: 20px;
+  padding: 25px 20px;
   font-size: 17px;
   text-align: center;
   background-color: #fff;
@@ -934,9 +938,19 @@ h3,
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
-.finder__link {
+.finder__tag {
   display: block;
   padding: 10px 15px;
+}
+.finder__subtitle {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.hit {
+  margin-bottom: 30px;
+}
+.hit .title-2 {
+  margin-bottom: 30px;
 }
 .hit__slide {
   position: relative;
@@ -1078,6 +1092,7 @@ h3,
   width: 50%;
   opacity: 0.7;
   padding-right: 20px;
+  padding-bottom: 12px;
 }
 .hit__table td:last-child {
   padding-right: 0;
@@ -1088,6 +1103,7 @@ h3,
   margin-top: auto;
 }
 .hit__discount {
+  margin-bottom: 5px;
   color: #177c19;
   font-weight: 700;
 }
@@ -1121,7 +1137,7 @@ h3,
 }
 .goods__item {
   width: 25%;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   padding-right: 10px;
 }
 .goods__item:nth-child(3),
@@ -1182,6 +1198,12 @@ h3,
 .goods__sublist li a:active {
   color: #4a7ba4;
 }
+.blog {
+  padding-bottom: 60px;
+}
+.blog .title {
+  margin-bottom: 35px;
+}
 .blog__list {
   margin: 0;
   padding: 0;
@@ -1235,7 +1257,7 @@ h3,
   height: auto;
 }
 .blog__info {
-  padding: 20px;
+  padding: 15px 20px;
 }
 .blog__info time {
   font-size: 12px;
@@ -1253,6 +1275,9 @@ h3,
 .info {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: rgba(34, 41, 54, 0.03);
+  -webkit-box-shadow: 0 -1px 0 0 rgba(34, 41, 54, 0.1), 0 1px 0 0 rgba(34, 41, 54, 0.1);
+          box-shadow: 0 -1px 0 0 rgba(34, 41, 54, 0.1), 0 1px 0 0 rgba(34, 41, 54, 0.1);
 }
 .info__wrap {
   padding: 30px;
@@ -1320,7 +1345,7 @@ h3,
 }
 .social__link {
   display: block;
-  padding: 10px;
+  padding: 0 10px;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
@@ -1348,7 +1373,7 @@ h3,
   padding-bottom: 30px;
 }
 .footer__bottom {
-  padding-top: 20px;
+  padding-top: 30px;
   border-top: 1px solid rgba(34, 41, 54, 0.2);
 }
 .footer__bottom span {
@@ -1363,6 +1388,9 @@ h3,
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.footer__nav li {
+  margin-bottom: 10px;
 }
 .footer__nav li a:hover,
 .footer__nav li a:active {
