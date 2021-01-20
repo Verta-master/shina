@@ -409,6 +409,24 @@
                     </form>
                   </div>
                 </div>
+                <div class="hit__modal">
+                  <button type="button" class="close hit__close"><i class="fas fa-times"></i></button>
+                  <p class="hit__top">Купить в 1 клик</p>
+                  <form action="#" class="form">
+                    <label for="name" class="form__label">Имя:<span>*</span></label>
+                    <input type="text" id="name" class="form__input" placeholder="Введите текст" required>
+                    <label for="tel" class="form__label">Телефон:<span>*</span></label>
+                    <input type="tel" id="tel" class="form__input" placeholder="+7 (000) 00-00-00" required>
+                    <button type="submit" class="btn form__btn">Заказать</button>
+                    <p class="form__comment">Отправляя форму, я даю согласие на <a href="#">обработку персональных данных</a></p>
+                    <p class="form__comment"><span>*</span> Поля, обязательные для заполнения</p>
+                  </form>
+                </div>
+                <div class="hit__basket">
+                  <button type="button" class="close hit__hide"><i class="fas fa-times"></i></button>
+                  <p>Товар успешно добавлен в корзину</p>
+                  <a href="#" class="btn hit__shop">Перейти в корзину</a>
+                </div>
               </div>
               <div class="swiper-slide hit__slide">
                 <div class="hit__labels">
@@ -919,6 +937,24 @@
         }
       }
     });
+  </script>
+  
+  <!-- Modal click -->
+  <script>
+    $('.hit__click').click(function() {
+      event.preventDefault();
+      $('.hit__modal').slideToggle();
+    });
+    $('.hit__close').click(function() {
+      $('.hit__modal').slideUp();
+    });
+    $('.hit__buy').click(function() {
+      event.preventDefault();
+      $('.hit__basket').slideToggle();
+    });
+    $('.hit__hide').click(function() {
+      $('.hit__basket').slideUp();
+    })
   </script>
 </body>
 </html>
