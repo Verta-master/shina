@@ -31,6 +31,61 @@
             <form action="#"></form>
           </div>
           <a href="#" class="header__icon header__icon--basket"><span>Корзина</span></a>
+          <div class="header__drop">
+            <button type="button" class="close header__close"><i class="fas fa-times"></i></button>
+            <div class="basket">
+              <p class="basket__title">Корзина</p>
+              <form action="#">
+                <table class="basket__table">
+                  <tr>
+                    <td>
+                      <a href="#" class="basket__img">
+                        <img src="img/images/21246_shina-pnevmaticheskaya-16070-20-1.webp" alt="Шина пневматическая 16.0/70-20 16PR STARMAXX SM-125 TL">
+                      </a>
+                    </td>
+                    <td>
+                      <a href="#" class="basket__remove" title="Удалить из корзины"><i class="fas fa-times"></i></a>
+                      <a href="#" class="basket__name">Шина пневматическая 16.0/70-20 16PR STARMAXX SM-125 TL</a>
+                      <div class="basket__line">
+                        <div class="basket__number">
+                          <button type="button" class="basket__num basket__num--minus">-</button>
+                          <input type="text" class="basket__value" value="1">
+                          <button type="button" class="basket__num basket__num--plus">+</button>
+                        </div>
+                        <div class="basket__price">27 500 руб.</div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#" class="basket__img">
+                        <img src="img/images/21248_shina-pnevmaticheskaya-12580-18-1.webp" alt="12.5/80-18 14PR STARMAXX SM-125 TL шина пневматическая">
+                      </a>
+                    </td>
+                    <td>
+                      <a href="#" class="basket__remove" title="Удалить из корзины"><i class="fas fa-times"></i></a>
+                      <a href="#" class="basket__name">12.5/80-18 14PR STARMAXX SM-125 TL шина пневматическая</a>
+                      <div class="basket__line">
+                        <div class="basket__number">
+                          <button type="button" class="basket__num basket__num--minus">-</button>
+                          <input type="text" class="basket__value" value="1">
+                          <button type="button" class="basket__num basket__num--plus">+</button>
+                        </div>
+                      <div class="basket__price">16 600 руб.</div>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+                <div class="basket__total">
+                 <div class="basket__info">Итого: 2 товара на 44 100 руб.</div>
+                  <div class="basket__sum"><b>44100</b> руб.</div>
+                </div>
+                <div class="basket__btn">
+                  <a href="#" class="btn basket__buy">Оформить</a>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -47,20 +102,22 @@
           </form>
         </div>
         <div class="header__block">
-          <div>Звоните:</div>
+          <div class="header__title">Звоните:</div>
           <a href="tel:+79253323253" class="header__phone">+7 (925) 332-32-53</a>
           <a href="tel:+78005000642" class="header__phone">+7 (800) 5000-642</a>
         </div>
         <div class="header__block">
-          <div>Пишите:</div>
+          <div class="header__title">Пишите:</div>
           <a href="https://t.me/specShina/" class="header__link header__link--tg"><i class="fab fa-telegram-plane"></i>Telegram</a>
           <a href="mailto:mailto:sales@shinajcb.ru" class="header__link header__link--mail"><i class="fas fa-envelope"></i>Почта</a>
           <a href="https://wa.me/79269703253" class="header__link header__link--wa"><i class="fab fa-whatsapp"></i>Whatsapp</a>
         </div>
         <div class="header__block">
-          <div>Приезжайте:</div>
-          <p>офис 9:00 до 18:00</p>
-          <p>склад 8:00 до 22:00</p>
+          <div class="header__title">Приезжайте:</div>
+          <div class="header__address">
+            <p>офис 9:00 до 18:00</p>
+            <p>склад 8:00 до 22:00</p>
+          </div>
           <a href="#" class="header__link header__link--contacts"><i class="fas fa-map-marker-alt"></i>Контакты</a>
         </div>
       </div>
@@ -810,6 +867,7 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="js/script.js"></script>
   
   <!-- Sliders -->
   <script>
