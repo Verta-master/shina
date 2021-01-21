@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="robots" content="noindex">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Title</title>
+  <title>JSB</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
@@ -95,7 +95,7 @@
           <img src="img/images/logo.webp" alt="Logo">
         </div>
         <div class="search">
-          <button type="button" class="search__open"></button>
+          <button type="button" class="search__open"><i class="fas fa-search"></i></button>
           <form action="#" class="search__form">
             <button type="submit" class="search__btn"><i class="fas fa-search"></i></button>
             <input type="text" class="search__input" placeholder="Поиск. Начните вводить">
@@ -119,6 +119,7 @@
             <p>склад 8:00 до 22:00</p>
           </div>
           <a href="#" class="header__link header__link--contacts"><i class="fas fa-map-marker-alt"></i>Контакты</a>
+          <a href="#" class="header__cart"><i class="fas fa-shopping-basket"></i></a>
         </div>
       </div>
     </div>
@@ -223,30 +224,41 @@
     <section class="promo">
       <div class="wrapper">
         <div class="promo__wrap">
-          <a href="#" class="promo__block">
-            <figure class="promo__img">
-              <img src="img/images/21732_proizvodstvo-i-prodazha-kov.png" alt="Производство и продажа ковшей для экскаваторов и погрузчиков">
-            </figure>
-            <div class="promo__text">
-              <strong>Производство и продажа ковшей для экскаваторов и погрузчиков</strong>
+          <div class="swiper-container promo__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide promo__slide">
+                <a href="#" class="promo__block">
+                  <figure class="promo__img">
+                    <img src="img/images/21732_proizvodstvo-i-prodazha-kov.png" alt="Производство и продажа ковшей для экскаваторов и погрузчиков">
+                  </figure>
+                  <div class="promo__text">
+                    <strong>Производство и продажа ковшей для экскаваторов и погрузчиков</strong>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide promo__slide">
+                <a href="#" class="promo__block">
+                  <figure class="promo__img">
+                    <img src="img/images/21012_kupit-originalnye-masla-.png" alt="Купить оригинальные масла и смазки в спецтехнику">
+                  </figure>
+                  <div class="promo__text">
+                    <strong>Купить оригинальные масла и смазки в спецтехнику</strong>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide promo__slide">
+                <a href="#" class="promo__block">
+                  <figure class="promo__img">
+                    <img src="img/images/21011_proizvodstvo-kovshey-dlya-ek.png" alt="Гидроцилиндры экскаваторов TEREX, JCB, Volvo, Komatsu">
+                  </figure>
+                  <div class="promo__text">
+                    <strong>Гидроцилиндры экскаваторов TEREX, JCB, Volvo, Komatsu</strong>
+                  </div>
+                </a>
+              </div>
             </div>
-          </a>
-          <a href="#" class="promo__block">
-            <figure class="promo__img">
-              <img src="img/images/21012_kupit-originalnye-masla-.png" alt="Купить оригинальные масла и смазки в спецтехнику">
-            </figure>
-            <div class="promo__text">
-              <strong>Купить оригинальные масла и смазки в спецтехнику</strong>
-            </div>
-          </a>
-          <a href="#" class="promo__block">
-            <figure class="promo__img">
-              <img src="img/images/21011_proizvodstvo-kovshey-dlya-ek.png" alt="Гидроцилиндры экскаваторов TEREX, JCB, Volvo, Komatsu">
-            </figure>
-            <div class="promo__text">
-              <strong>Гидроцилиндры экскаваторов TEREX, JCB, Volvo, Komatsu</strong>
-            </div>
-          </a>
+            <div class="swiper-pagination promo__pagination"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -715,7 +727,7 @@
       </div>
     </section>
     
-    <section class="blog">
+    <section class="blog blog--main">
       <div class="wrapper">
         <div class="title">
           <h2 class="title-2">Полезные статьи:</h2>
@@ -773,7 +785,7 @@
       </div>
     </section>
     
-    <section class="info">
+    <section class="info info--main">
       <div class="wrapper">
         <div class="info__wrap">
           <h2 class="title-2">Шины для JCB 3CX, JCB 3CX Super Sitemaster, CASE 695, TEREX 970, TEREX 980</h2>
@@ -790,7 +802,7 @@
       </div>
     </section>
     
-    <section class="map">
+    <section class="map map--main">
       <iframe data-src="https://yandex.ru/map-widget/v1/?um=constructor%3A9ce7de536aa2993161c84048757a4f5ca245d25fa4d22fd519b18a5884963866&amp;source=constructor" width="100%" height="400" frameborder="0" class="lazy-loaded" src="https://yandex.ru/map-widget/v1/?um=constructor%3A9ce7de536aa2993161c84048757a4f5ca245d25fa4d22fd519b18a5884963866&amp;source=constructor"></iframe>
     </section>
   </main>
@@ -869,6 +881,11 @@
             </ul>
           </div>
         </div>
+        <form action="#" class="subscribe">
+          <input type="text" class="subscribe__input" placeholder="Ваш e-mail">
+          <button type="submit" class="btn subscribe__btn">Подписаться на рассылку</button>
+          <p class="subscribe__comment">Отправляя форму, я даю согласие на <a href="#">обработку персональных данных</a>. Соглашаюсь с <a href="#">политикой конфиденциальности google</a> и <a href="#">с уловиями предоставления услуг сервисов google.</a></p>
+        </form>
       </div>
       <div class="footer__bottom">
         <span>Шина JCB 2013 - 2021 гг.</span>
@@ -886,6 +903,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/promo-slider.js"></script>
   
   <!-- Sliders -->
   <script>
@@ -901,16 +919,19 @@
       spaceBetween: 20,
       breakpoints: {
         1200: {
-          slidesPerView: 5,
+          spaceBetween: 10,
         },
         1022: {
-          slidesPerView: 4,
+          slidesPerView: 5,
+          spaceBetween: 10,
         },
         766: {
           slidesPerView: 3,
+          spaceBetween: 10,
         },
         480: {
           slidesPerView: 2,
+          spaceBetween: 10,
         }
       }
     });
@@ -927,13 +948,16 @@
       spaceBetween: 20,
       breakpoints: {
         1200: {
-          slidesPerView: 4,
+          slidesPerView: 3,
+          spaceBetween: 10,
         },
-        1022: {
+        766: {
           slidesPerView: 2,
+          spaceBetween: 10,
         },
         480: {
           slidesPerView: 1,
+          spaceBetween: 10,
         }
       }
     });
