@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="stylesheet" href="css/mmenu.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -91,6 +92,7 @@
     </div>
     <div class="header__bottom">
       <div class="wrapper">
+        <a href="#menu" class="header__mobile"><i class="fas fa-bars"></i></a>
         <div class="logo">
           <img src="img/images/logo.webp" alt="Logo">
         </div>
@@ -106,13 +108,13 @@
           <a href="tel:+79253323253" class="header__phone">+7 (925) 332-32-53</a>
           <a href="tel:+78005000642" class="header__phone">+7 (800) 5000-642</a>
         </div>
-        <div class="header__block">
+        <div class="header__block header__block--nets">
           <div class="header__title">Пишите:</div>
           <a href="https://t.me/specShina/" class="header__link header__link--tg"><i class="fab fa-telegram-plane"></i>Telegram</a>
           <a href="mailto:mailto:sales@shinajcb.ru" class="header__link header__link--mail"><i class="fas fa-envelope"></i>Почта</a>
           <a href="https://wa.me/79269703253" class="header__link header__link--wa"><i class="fab fa-whatsapp"></i>Whatsapp</a>
         </div>
-        <div class="header__block">
+        <div class="header__block header__block--basket">
           <div class="header__title">Приезжайте:</div>
           <div class="header__address">
             <p>офис 9:00 до 18:00</p>
@@ -219,6 +221,42 @@
       </ul>
     </div>
   </nav>
+  
+<!--
+  <div id="page">
+    <nav id="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+          <span>About us</span>
+          <ul>
+            <li><a href="#about/history">History</a></li>
+            <li>
+              <span>The team</span>
+              <ul>
+                <li>
+                  <a href="#about/team/management">Management</a>
+                </li>
+                <li>
+                  <a href="#about/team/sales">Sales</a>
+                </li>
+                <li>
+                  <a href="#about/team/development">Development</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#about/address">Our address</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+
+        <li class="Divider">Other demos</li>
+        <li><a href="advanced.html">Advanced demo</a></li>
+        <li><a href="onepage.html">One page demo</a></li>
+      </ul>
+    </nav>
+  </div>
+-->
   
   <main>
     <section class="promo">
@@ -904,6 +942,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/promo-slider.js"></script>
+  <script src="js/mmenu.polyfills.js"></script>
+  <script src="js/mmenu.js"></script>
   
   <!-- Sliders -->
   <script>
@@ -979,6 +1019,19 @@
     $('.hit__hide').click(function() {
       $('.hit__basket').slideUp();
     })
+  </script>
+  
+  <!-- Mobile menu plugin -->
+  <script>
+    new Mmenu(document.querySelector('#menu'));
+
+    document.addEventListener('click', function (evnt) {
+      var anchor = evnt.target.closest('a[href^="#/"]');
+      if (anchor) {
+        alert("Thank you for clicking, but that's a demo link.");
+        evnt.preventDefault();
+      }
+    });
   </script>
 </body>
 </html>
