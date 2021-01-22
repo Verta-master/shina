@@ -1,0 +1,43 @@
+.sorting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sorting__text {
+  margin-right: 10px;
+}
+
+.sorting__block,
+.sorting__number,
+.sorting__view {
+  display: flex;
+  align-items: center;
+}
+
+.sorting__view {
+  margin-left: auto;
+}
+
+.sorting__number {
+  margin-left: 10px;
+}
+
+.sorting__link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+  .transition();
+  
+  &:hover,
+  &:active,
+  &--active {
+    color: @blue;
+    .transition();
+  }
+}

@@ -39,3 +39,37 @@
     color: @blue;
   }
 }
+
+.select {
+  display: block;
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 45px;
+  color: @blue;
+  background-color: rgba(255,255,255,0);
+  box-shadow: 0 0 0 1px rgba(74, 123, 164,.1);
+  border: 0;
+  appearance: none;
+  outline: none;
+  
+  &::-ms-expand {
+    color: transparent;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.select-wrap {
+  position: relative;
+  
+  &::after {
+    content: "\f107";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 5;
+    color: rgb(74, 123, 164);
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+  }
+}

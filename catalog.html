@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>JSB</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="stylesheet" href="css/mmenu.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="wrapper">
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li><a href="#">Оплата</a></li>
+            <li><a href="#">Бесплатная доставка</a></li>
+            <li><a href="#">Гарантия на шины</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Обратная связь</a></li>
+          </ul>
+        </nav>
+        <div class="header__user">
+          <a href="#" class="header__icon header__icon--like" title="Избранное"></a>
+          <div class="header__icon header__icon--compare">
+            <form action="#"></form>
+          </div>
+          <a href="#" class="header__icon header__icon--basket"><span>Корзина</span></a>
+          <div class="header__drop">
+            <button type="button" class="close header__close"><i class="fas fa-times"></i></button>
+            <div class="basket">
+              <p class="basket__title">Корзина</p>
+              <form action="#">
+                <table class="basket__table">
+                  <tr>
+                    <td>
+                      <a href="#" class="basket__img">
+                        <img src="img/images/21246_shina-pnevmaticheskaya-16070-20-1.webp" alt="Шина пневматическая 16.0/70-20 16PR STARMAXX SM-125 TL">
+                      </a>
+                    </td>
+                    <td>
+                      <a href="#" class="basket__remove" title="Удалить из корзины"><i class="fas fa-times"></i></a>
+                      <a href="#" class="basket__name">Шина пневматическая 16.0/70-20 16PR STARMAXX SM-125 TL</a>
+                      <div class="basket__line">
+                        <div class="basket__number">
+                          <button type="button" class="basket__num basket__num--minus">-</button>
+                          <input type="text" class="basket__value" value="1">
+                          <button type="button" class="basket__num basket__num--plus">+</button>
+                        </div>
+                        <div class="basket__price">27 500 руб.</div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#" class="basket__img">
+                        <img src="img/images/21248_shina-pnevmaticheskaya-12580-18-1.webp" alt="12.5/80-18 14PR STARMAXX SM-125 TL шина пневматическая">
+                      </a>
+                    </td>
+                    <td>
+                      <a href="#" class="basket__remove" title="Удалить из корзины"><i class="fas fa-times"></i></a>
+                      <a href="#" class="basket__name">12.5/80-18 14PR STARMAXX SM-125 TL шина пневматическая</a>
+                      <div class="basket__line">
+                        <div class="basket__number">
+                          <button type="button" class="basket__num basket__num--minus">-</button>
+                          <input type="text" class="basket__value" value="1">
+                          <button type="button" class="basket__num basket__num--plus">+</button>
+                        </div>
+                      <div class="basket__price">16 600 руб.</div>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+                <div class="basket__total">
+                 <div class="basket__info">Итого: 2 товара на 44 100 руб.</div>
+                  <div class="basket__sum"><b>44100</b> руб.</div>
+                </div>
+                <div class="basket__btn">
+                  <a href="#" class="btn basket__buy">Оформить</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="wrapper">
+        <a href="#menu" class="header__mobile"><i class="fas fa-bars"></i></a>
+        <div class="logo">
+          <img src="img/images/logo.webp" alt="Logo">
+        </div>
+        <div class="search">
+          <button type="button" class="search__open"><i class="fas fa-search"></i></button>
+          <form action="#" class="search__form">
+            <button type="submit" class="search__btn"><i class="fas fa-search"></i></button>
+            <input type="text" class="search__input" placeholder="Поиск. Начните вводить">
+          </form>
+        </div>
+        <div class="header__block">
+          <div class="header__title">Звоните:</div>
+          <a href="tel:+79253323253" class="header__phone">+7 (925) 332-32-53</a>
+          <a href="tel:+78005000642" class="header__phone">+7 (800) 5000-642</a>
+        </div>
+        <div class="header__block header__block--nets">
+          <div class="header__title">Пишите:</div>
+          <a href="https://t.me/specShina/" class="header__link header__link--tg"><i class="fab fa-telegram-plane"></i>Telegram</a>
+          <a href="mailto:mailto:sales@shinajcb.ru" class="header__link header__link--mail"><i class="fas fa-envelope"></i>Почта</a>
+          <a href="https://wa.me/79269703253" class="header__link header__link--wa"><i class="fab fa-whatsapp"></i>Whatsapp</a>
+        </div>
+        <div class="header__block header__block--basket">
+          <div class="header__title">Приезжайте:</div>
+          <div class="header__address">
+            <p>офис 9:00 до 18:00</p>
+            <p>склад 8:00 до 22:00</p>
+          </div>
+          <a href="#" class="header__link header__link--contacts"><i class="fas fa-map-marker-alt"></i>Контакты</a>
+          <a href="#" class="header__cart"><i class="fas fa-shopping-basket"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav class="menu">
+    <div class="wrapper">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link menu__link--arrow">Фильтры для спецтехники</a>
+          <div class="menu__drop">
+            <ul class="menu__sublist">
+              <li><a href="#">CATERPILLAR</a></li>
+              <li><a href="#">VOGELE</a></li>
+              <li><a href="#">Bobcat</a></li>
+              <li><a href="#">АМКОДОР</a></li>
+              <li><a href="#">Фильтры JCB</a></li>
+              <li><a href="#">NEW HOLLAND</a></li>
+              <li><a href="#">Фильтры для John Deere</a></li>
+              <li><a href="#">MANITOU</a></li>
+              <li><a href="#">HIDROMEK</a></li>
+              <li><a href="#">DYNAPAC</a></li>
+              <li><a href="#">VOLVO</a></li>
+              <li><a href="#">ABG</a></li>
+              <li><a href="#">ANT</a></li>
+              <li><a href="#">LOCUST</a></li>
+              <li><a href="#">HITACHI</a></li>
+              <li><a href="#">Liebherr</a></li>
+              <li><a href="#">KOMATSU</a></li>
+              <li><a href="#">Case</a></li>
+              <li><a href="#">XCMG</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link menu__link--arrow">Каталог спецшин</a>
+          <div class="menu__drop">
+            <ul class="menu__sublist">
+              <li><a href="#">Экскаватор погрузчик</a></li>
+              <li><a href="#">Экскаватор</a></li>
+              <li><a href="#">Сельхоз шины</a></li>
+              <li><a href="#">Минипогрузчик</a></li>
+              <li><a href="#">Вилочный погрузчик</a></li>
+              <li><a href="#">Телескопический погрузчик</a></li>
+              <li><a href="#">Фронтальный погрузчик</a></li>
+              <li><a href="#">Каток</a></li>
+              <li><a href="#">Грейдер</a></li>
+              <li><a href="#">Сочленённый самосвал</a></li>
+              <li><a href="#">Грузовые шины</a></li>
+              <li><a href="#">Шины на самосвалы</a></li>
+              <li><a href="#">Шины для портовых погрузчиков</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link menu__link--arrow">Запчасти JCB</a>
+          <div class="menu__drop">
+            <ul class="menu__sublist">
+              <li><a href="#">Фильтры JCB</a></li>
+              <li><a href="#">Гидроцилиндры JCB</a></li>
+              <li><a href="#">Пальцы и втулки JCB</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link menu__link--arrow">Ковши</a>
+          <div class="menu__drop">
+            <ul class="menu__sublist">
+              <li><a href="#">JCB</a></li>
+              <li><a href="#">МТЗ</a></li>
+              <li><a href="#">Caterpillar</a></li>
+              <li><a href="#">Hidromek</a></li>
+              <li><a href="#">Volvo</a></li>
+              <li><a href="#">New Holland</a></li>
+              <li><a href="#">Hyundai</a></li>
+              <li><a href="#">Hitachi</a></li>
+              <li><a href="#">John Deere</a></li>
+              <li><a href="#">Komatsu</a></li>
+              <li><a href="#">Case</a></li>
+              <li><a href="#">Terex</a></li>
+              <li><a href="#">ТВЭКС</a></li>
+              <li><a href="#">Samsung</a></li>
+              <li><a href="#">Doosan</a></li>
+              <li><a href="#">Bobcat</a></li>
+              <li><a href="#">Manitou</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Масла</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Диски</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Камеры</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <main>
+    <nav class="breadcrumbs">
+      <div class="wrapper">
+        <a href="#" class="breadcrumbs__link">Главная</a>
+        <span class="breadcrumbs__link">Каталог шин для спецтехники</span>
+      </div>
+    </nav>
+    
+    <section class="catalog">
+      <div class="wrapper">
+        <h1 class="title">Каталог шин для спецтехники</h1>
+        <a href="#" class="catalog__service">Монтаж-Демонтаж спецшин. С выездом <span>- 1</span></a>
+        
+        <div class="wrapper__columns">
+          <aside class="sidebar">
+            <div class="filter">
+              <form action="#" class="filter__form">
+                <p class="filter__title">Фильтр по товарам:</p>
+                <div class="filter__field">
+                  <div class="filter__category">Цена</div>
+                  <div class="filter__drop">
+                    <div class="filter__line">
+                      <input type="text" class="filter__input" placeholder="От">
+                      <input type="text" class="filter__input" placeholder="До">
+                    </div>
+                  </div>
+                </div>
+                <div class="filter__field">
+                  <div class="filter__category">Артикул</div>
+                  <div class="filter__drop">
+                    <input type="text" class="filter__input" placeholder="Введите артикул">
+                  </div>
+                </div>
+                <div class="filter__field">
+                  <div class="filter__category">Производитель</div>
+                  <div class="filter__drop">
+                    <ul class="filter__list">
+                      <li class="filter__item">
+                        <input type="checkbox" id="checkbox1" class="checkbox">
+                        <label for="checkbox1" class="checkbox-label">Шины Starmaxx</label>
+                      </li>
+                      <li class="filter__item">
+                        <input type="checkbox" id="checkbox2" class="checkbox">
+                        <label for="checkbox2" class="checkbox-label">Шины Ozka Lastik</label>
+                      </li>
+                      <li class="filter__item">
+                        <input type="checkbox" id="checkbox3" class="checkbox">
+                        <label for="checkbox3" class="checkbox-label">Шины Deestone</label>
+                      </li>
+                      <li class="filter__item">
+                        <input type="checkbox" id="checkbox4" class="checkbox">
+                        <label for="checkbox4" class="checkbox-label">Шины Camso (SOLIDEAL)</label>
+                      </li>
+                      <li class="filter__item">
+                        <input type="checkbox" id="checkbox5" class="checkbox">
+                        <label for="checkbox5" class="checkbox-label">Шины Alliance</label>
+                      </li>
+                      <li class="filter__item">
+                        <input type="checkbox" id="checkbox6" class="checkbox">
+                        <label for="checkbox6" class="checkbox-label">Шины Petlas</label>
+                      </li>
+                    </ul>
+                    <a href="#" class="filter__show">Показать еще</a>
+                  </div>
+                </div>
+                <div class="filter__field">
+                  <div class="filter__category">РАЗМЕР</div>
+                  <div class="filter__drop">
+                    <ul class="filter__list">
+                      <li class="filter__item">
+                        <input type="checkbox" id="checkbox11" class="checkbox">
+                        <label for="checkbox11" class="checkbox-label">10-16.5</label>
+                      </li>
+                      <li class="filter__item">
+                        <input type="checkbox" id="checkbox12" class="checkbox">
+                        <label for="checkbox12" class="checkbox-label">10.00-20</label>
+                      </li>
+                      <li class="filter__item">
+                        <input type="checkbox" id="checkbox13" class="checkbox">
+                        <label for="checkbox13" class="checkbox-label">10.00R20</label>
+                      </li>
+                      <li class="filter__item">
+                        <input type="checkbox" id="checkbox14" class="checkbox">
+                        <label for="checkbox14" class="checkbox-label">10.5/80-18</label>
+                      </li>
+                      <li class="filter__item">
+                        <input type="checkbox" id="checkbox15" class="checkbox">
+                        <label for="checkbox15" class="checkbox-label">10/75-15.3</label>
+                      </li>
+                      <li class="filter__item">
+                        <input type="checkbox" id="checkbox16" class="checkbox">
+                        <label for="checkbox16" class="checkbox-label">11.00-20</label>
+                      </li>
+                    </ul>
+                    <a href="#" class="filter__show">Показать еще</a>
+                  </div>
+                </div>
+                <a href="#" class="filter__clear">Очистить фильтр</a>
+              </form>
+            </div>
+          </aside>
+          
+          <div class="wrapper__content">
+            <div class="sorting">
+              <div class="sorting__block">
+                <span class="sorting__text">Сортировка:</span>
+                <div class="select-wrap">
+                  <select class="select sorting__select">
+                    <option disabled selected>По умолчанию</option>
+                    <option disabled>По цене:</option>
+                    <option value="1" href="http://shinajcb.ru/specshiny/sort1/">Дешевле - дороже</option>
+                    <option value="2" href="http://shinajcb.ru/specshiny/sort2/">Дороже - дешевле</option>
+                    <option disabled>По названию:</option>
+                    <option value="3" href="http://shinajcb.ru/specshiny/sort3/">От А-А до Я-Z</option>
+                    <option value="4" href="http://shinajcb.ru/specshiny/sort4/">От Я-Z до А-A</option>
+                  </select>
+                </div>
+              </div>
+              <div class="sorting__view">
+                <span class="sorting__text">Отображение:</span>
+                <a href="#" class="sorting__link sorting__link--tile sorting__link--active" title="Вид плиткой"><i class="fas fa-th"></i></a>
+                <a href="#" class="sorting__link sorting__link--list" title="Вид списком"><i class="fas fa-list-ul"></i></a>
+                <a href="#" class="sorting__link sorting__link--table" title="Вид таблицей"><i class="fas fa-th-list"></i></a>
+              </div>
+              <div class="sorting__number">
+                <span class="sorting__text">Товаров:</span>
+                <div class="select-wrap">
+                  <select class="select sorting__num">
+                    <option value="1" selected>12</option>
+                    <option value="2">24</option>
+                    <option value="3">48</option>
+                    <option value="4">96</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            
+            <div class="hit">
+              <ul class="hit__list">
+                <li class="hit__item">
+                  <div class="hit__labels">
+                    <span class="hit__label">Хит</span>
+                  </div>
+                  <div class="hit__userbtns">
+                    <div class="hit__userbtn hit__userbtn--compare">
+                      <form action="#"></form>
+                    </div>
+                    <a href="#" class="hit__userbtn hit__userbtn--like" title="Избранное"></a>
+                  </div>
+                  <a href="#" class="hit__img">
+                    <img src="img/images/21345_shina-pnevmaticheskaya-12580-18-1.webp" alt="Шина пневматическая 12.5/80-18 12PR Nortec Forward TC106 TL">
+                  </a>
+                  <div class="hit__info">
+                    <a href="#" class="hit__title">Шина пневматическая 12.5/80-18 12PR Nortec Forward TC106 TL</a>
+                    <p class="hit__brand">Производитель: <a href="#">Шины Nortec</a></p>
+                    <table class="hit__table">
+                      <tr>
+                        <td>РАЗМЕР:</td>
+                        <td>12.5/80-18 (320/80-18)</td>
+                      </tr>
+                      <tr>
+                        <td>Для какой техники:</td>
+                        <td>Шины для экскаваторов-погрузчиков, Шины для Hidromek</td>
+                      </tr>
+                      <tr>
+                        <td>ТИП ШИНЫ:</td>
+                        <td>Диагональные шины</td>
+                      </tr>
+                      <tr>
+                        <td>Область применения:</td>
+                        <td>экскаватор погрузчик</td>
+                      </tr>
+                    </table>
+                    <div class="hit__bottom">
+                      <form action="#" class="hit__form">
+                        <div class="hit__discount">Скидка: -10 %</div>
+                        <div class="hit__price">13500 руб.</div>
+                        <a href="#" class="btn btn--white hit__buy">В корзину</a>
+                        <a href="#" class="btn btn--grey hit__click">Купить в 1 клик</a>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="hit__modal">
+                    <button type="button" class="close hit__close"><i class="fas fa-times"></i></button>
+                    <p class="hit__top">Купить в 1 клик</p>
+                    <form action="#" class="form">
+                      <label for="name" class="form__label">Имя:<span>*</span></label>
+                      <input type="text" id="name" class="form__input" placeholder="Введите текст" required>
+                      <label for="tel" class="form__label">Телефон:<span>*</span></label>
+                      <input type="tel" id="tel" class="form__input" placeholder="+7 (000) 00-00-00" required>
+                      <button type="submit" class="btn form__btn">Заказать</button>
+                      <p class="form__comment">Отправляя форму, я даю согласие на <a href="#">обработку персональных данных</a></p>
+                      <p class="form__comment"><span>*</span> Поля, обязательные для заполнения</p>
+                    </form>
+                  </div>
+                  <div class="hit__basket">
+                    <button type="button" class="close hit__hide"><i class="fas fa-times"></i></button>
+                    <p>Товар успешно добавлен в корзину</p>
+                    <a href="#" class="btn hit__shop">Перейти в корзину</a>
+                  </div>
+                </li>
+                <li class="hit__item">
+                  <div class="hit__labels">
+                    <span class="hit__label">Акция</span>
+                    <span class="hit__label">Хит</span>
+                  </div>
+                  <div class="hit__userbtns">
+                    <div class="hit__userbtn hit__userbtn--compare">
+                      <form action="#"></form>
+                    </div>
+                    <a href="#" class="hit__userbtn hit__userbtn--like" title="Избранное"></a>
+                  </div>
+                  <a href="#" class="hit__img">
+                    <img src="img/images/21246_shina-pnevmaticheskaya-16070-20-1.webp" alt="Шина пневматическая 16.0/70-20 16PR STARMAXX SM-125 TL">
+                  </a>
+                  <div class="hit__info">
+                    <a href="#" class="hit__title">Шина пневматическая 16.0/70-20 16PR STARMAXX SM-125 TL</a>
+                    <p class="hit__brand">Производитель: <a href="#">Шины Starmaxx</a></p>
+                    <table class="hit__table">
+                      <tr>
+                        <td>РАЗМЕР:</td>
+                        <td>16.0/70-20 (405/70-20)</td>
+                      </tr>
+                      <tr>
+                        <td>Для какой техники:</td>
+                        <td>Шины для экскаваторов-погрузчиков, Шины для Hidromek</td>
+                      </tr>
+                      <tr>
+                        <td>ТИП ШИНЫ:</td>
+                        <td>Бескамерные шины, Диагональные шины</td>
+                      </tr>
+                    </table>
+                    <div class="hit__bottom">
+                      <form action="#" class="hit__form">
+                        <div class="hit__discount">Скидка: 5%</div>
+                        <div class="hit__price">27500 руб.</div>
+                        <a href="#" class="btn btn--white hit__buy">В корзину</a>
+                        <a href="#" class="btn btn--grey hit__click">Купить в 1 клик</a>
+                      </form>
+                    </div>
+                  </div>
+                </li>
+                <li class="hit__item">
+                  <div class="hit__labels">
+                    <span class="hit__label">Хит</span>
+                  </div>
+                  <div class="hit__userbtns">
+                    <div class="hit__userbtn hit__userbtn--compare">
+                      <form action="#"></form>
+                    </div>
+                    <a href="#" class="hit__userbtn hit__userbtn--like" title="Избранное"></a>
+                  </div>
+                  <a href="#" class="hit__img">
+                    <img src="img/images/21248_shina-pnevmaticheskaya-12580-18-1.webp" alt="12.5/80-18 14PR STARMAXX SM-125 TL шина пневматическая">
+                  </a>
+                  <div class="hit__info">
+                    <a href="#" class="hit__title">12.5/80-18 14PR STARMAXX SM-125 TL шина пневматическая</a>
+                    <p class="hit__brand">Производитель: <a href="#">Шины Starmaxx</a></p>
+                    <table class="hit__table">
+                      <tr>
+                        <td>РАЗМЕР:</td>
+                        <td>12.5/80-18 (320/80-18)</td>
+                      </tr>
+                      <tr>
+                        <td>Для какой техники:</td>
+                        <td>Шины для экскаваторов-погрузчиков, Шины для Hidromek</td>
+                      </tr>
+                      <tr>
+                        <td>ТИП ШИНЫ:</td>
+                        <td>Бескамерные шины, Диагональные шины</td>
+                      </tr>
+                      <tr>
+                        <td>Область применения:</td>
+                        <td>экскаватор погрузчик</td>
+                      </tr>
+                    </table>
+                    <div class="hit__bottom">
+                      <form action="#" class="hit__form">
+                        <div class="hit__discount">Скидка: 2%</div>
+                        <div class="hit__price">16600 руб.</div>
+                        <a href="#" class="btn btn--white hit__buy">В корзину</a>
+                        <a href="#" class="btn btn--grey hit__click">Купить в 1 клик</a>
+                      </form>
+                    </div>
+                  </div>
+                </li>
+                <li class="hit__item">
+                  <div class="hit__labels">
+                    <span class="hit__label">Хит</span>
+                  </div>
+                  <div class="hit__userbtns">
+                    <div class="hit__userbtn hit__userbtn--compare">
+                      <form action="#"></form>
+                    </div>
+                    <a href="#" class="hit__userbtn hit__userbtn--like" title="Избранное"></a>
+                  </div>
+                  <a href="#" class="hit__img">
+                    <img src="img/images/21342_shina-pnevmaticheskaya-12580-18-1.webp" alt="Шина пневматическая 12.5/80-18 12PR Deestone D302 DUMPER POWER TL">
+                  </a>
+                  <div class="hit__info">
+                    <a href="#" class="hit__title">Шина пневматическая 12.5/80-18 12PR Deestone D302 DUMPER POWER TL</a>
+                    <p class="hit__brand">Производитель: <a href="#">Шины Deestone</a></p>
+                    <table class="hit__table">
+                      <tr>
+                        <td>РАЗМЕР:</td>
+                        <td>12.5/80-18 (320/80-18)</td>
+                      </tr>
+                      <tr>
+                        <td>Для какой техники:</td>
+                        <td>Шины для экскаваторов-погрузчиков, Шины для Hidromek</td>
+                      </tr>
+                      <tr>
+                        <td>Область применения:</td>
+                        <td>экскаватор погрузчик</td>
+                      </tr>
+                    </table>
+                    <div class="hit__bottom">
+                      <form action="#" class="hit__form">
+                        <div class="hit__discount">Скидка: 5%</div>
+                        <div class="hit__price">17500 руб.</div>
+                        <a href="#" class="btn btn--white hit__buy">В корзину</a>
+                        <a href="#" class="btn btn--grey hit__click">Купить в 1 клик</a>
+                      </form>
+                    </div>
+                  </div>
+                </li>
+                <li class="hit__item">
+                  <div class="hit__labels">
+                    <span class="hit__label">Хит</span>
+                  </div>
+                  <div class="hit__userbtns">
+                    <div class="hit__userbtn hit__userbtn--compare">
+                      <form action="#"></form>
+                    </div>
+                    <a href="#" class="hit__userbtn hit__userbtn--like" title="Избранное"></a>
+                  </div>
+                  <a href="#" class="hit__img">
+                    <img src="img/images/21345_shina-pnevmaticheskaya-12580-18-1.webp" alt="Шина пневматическая 12.5/80-18 12PR Nortec Forward TC106 TL">
+                  </a>
+                  <div class="hit__info">
+                    <a href="#" class="hit__title">Шина пневматическая 12.5/80-18 12PR Nortec Forward TC106 TL</a>
+                    <p class="hit__brand">Производитель: <a href="#">Шины Nortec</a></p>
+                    <table class="hit__table">
+                      <tr>
+                        <td>РАЗМЕР:</td>
+                        <td>12.5/80-18 (320/80-18)</td>
+                      </tr>
+                      <tr>
+                        <td>Для какой техники:</td>
+                        <td>Шины для экскаваторов-погрузчиков, Шины для Hidromek</td>
+                      </tr>
+                      <tr>
+                        <td>ТИП ШИНЫ:</td>
+                        <td>Диагональные шины</td>
+                      </tr>
+                      <tr>
+                        <td>Область применения:</td>
+                        <td>экскаватор погрузчик</td>
+                      </tr>
+                    </table>
+                    <div class="hit__bottom">
+                      <form action="#" class="hit__form">
+                        <div class="hit__discount">Скидка: -10 %</div>
+                        <div class="hit__price">13500 руб.</div>
+                        <a href="#" class="btn btn--white hit__buy">В корзину</a>
+                        <a href="#" class="btn btn--grey hit__click">Купить в 1 клик</a>
+                      </form>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="hit__more">
+                <a href="#" class="btn">Показать ещё</a>
+              </div>
+            </div>
+            
+            <nav class="pages">
+              <a href="#" class="pages__link pages__link--disabled">Первая</a>
+              <span class="pages__link pages__link--active">1</span>
+              <a href="#" class="pages__link">2</a>
+              <a href="#" class="pages__link">3</a>
+              <a href="#" class="pages__link">4</a>
+              <a href="#" class="pages__link">5</a>
+              <span class="pages__link">...</span>
+              <a href="#" class="pages__link">Последняя</a>
+            </nav>
+            
+            <div class="info info--content">
+              <p class="title">«Шина JCB» - развивайте свой бизнес с надежным партнером!</p>
+              <p>«ShinaJCB» - это один из крупнейших дилеров и дистрибьюторов шинной продукции в регионе. Здесь вы всегда можете найти шины и комплектующие на экскаваторы, катки, грейдеры, складскую и погрузочную технику, шины на самосвалы и многое другое. В каталоге представлены более 20-ти мировых брендов: STARMAXX, BKT, SOLIDEAL, Michelin, Hankook и другие.</p>
+              <p class="title-2">Как сделать заказ и получить его в кратчайшие сроки</p>
+              <p>В каталоге шин предусмотрен удобный фильтр, который позволяет отсортировать товар по таким критериям, как тип техники, бренд, диапазон стоимости. В карточке каждого товара указаны краткие характеристики. Обратите внимание на соответствие шины и модели техники. Наши специалисты готовы ответить на любые ваши вопросы.</p>
+              <p>Чтобы купить шины или комплектующие, добавьте товар в корзину или в карточке товара нажмите кнопку «Заказать». Укажите ваши контактные данные и в течение 15 минут менеджер перезвонит вам для согласования условий оплаты и доставки. Предоплата не требуется!</p>
+              <p>Наши преимущества:</p>
+              <ul>
+                <li>Оптимальная цена. Работаем только с непосредственными производителями или оптовыми дилерскими центрами. Потому готовы предложить вам лучшие цены без посреднической наценки. Рассмотрим индивидуальные предложения - услышим каждого.</li>
+                <li>Индивидуальный подход. Наши специалисты знают о шинах на спецтехнику все. Поможем выбрать шины под любые задачи и под любой характер эксплуатации. Расскажем о специфике и вышлем по запросу технические характеристики.</li>
+                <li>Гарантия. В каталоге представлена только оригинальная продукция от компаний с мировым именем. Сможете доказать, что наши шины - подделка, мы подарим вам их бесплатно.</li>
+                <li>Скорость выполнения заказа. Весь товар есть на складе и мы готовы организовать доставку через 5 минут после того, как вы подтвердите заказ. Нет простою техники - доверяйте тем, кто ценит ваше время.</li>
+                <li>Акции и программа лояльности для оптовых и постоянных клиентов. Мы всегда готовы поделиться с нашими деловыми партнерами чем-то хорошим и нужным.</li>
+              </ul>
+              <p>А еще наши специалисты всегда готовы подарить вам хорошее настроение. Мы стараемся, чтобы каждый покупатель чувствовал себя максимально комфортно и надеемся, что у нас это получается. Убедительная просьба: после покупки оставьте, пожалуйста, отзыв о сотрудничестве с нами. Нам важно понимать, остались ли вы довольны и в каком направлении дальше совершенствовать сервис. Заранее благодарны!</p>
+            </div>
+          </div>
+        </div>
+        
+        <nav class="catalog__links">
+          <a href="#" class="catalog__link hidden">
+            <p class="catalog__text">К предыдущему элементу</p>
+            <p class="catalog__page">Каталог шин для спецтехники</p>
+          </a>
+          <a href="#" class="catalog__link catalog__link--right">
+            <p class="catalog__text">К следующему элементу</p>
+            <p class="catalog__page">Запчасти JCB</p>
+          </a>
+        </nav>
+      </div>
+    </section>
+    
+    
+  </main>
+  
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__top">
+        <div class="footer__block footer__block--goods">
+          <p class="footer__title">У нас есть:</p>
+          <ul class="footer__nav">
+            <li><a href="#">Шины для экскаваторов-погрузчиков</a></li>
+            <li><a href="#">Шины для фронтальных погрузчиков</a></li>
+            <li><a href="#">Шины для экскаваторов</a></li>
+            <li><a href="#">Шины для мини погрузчиков</a></li>
+            <li><a href="#">Шины для телескопических погрузчиков</a></li>
+            <li><a href="#">Шины для вилочных погрузчиков</a></li>
+            <li><a href="#">Запчасти JCB</a></li>
+          </ul>
+        </div>
+        <div class="footer__block footer__block--brands">
+          <p class="footer__title">Наши бренды:</p>
+          <ul class="footer__nav">
+            <li><a href="#">Запчасти JCB</a></li>
+            <li><a href="#">Ozka Lastik</a></li>
+            <li><a href="#">Deestone</a></li>
+            <li><a href="#">CAMSO</a></li>
+            <li><a href="#">Alliance</a></li>
+            <li><a href="#">Galaxy</a></li>
+            <li><a href="#">STARCO</a></li>
+            <li><a href="#">Nortec</a></li>
+            <li><a href="#">Armour</a></li>
+            <li><a href="#">Michelin</a></li>
+            <li><a href="#">Kabat</a></li>
+            <li><a href="#">Kenda</a></li>
+            <li><a href="#">BKT</a></li>
+            <li><a href="#">Marcher</a></li>
+            <li><a href="#">PETLAS</a></li>
+          </ul>
+        </div>
+        <div class="footer__block footer__block--address">
+          <p class="footer__title">Приезжайте:</p>
+          <address>Москва, Никопольская улица, 6с9</address>
+          <p class="footer__title">Мы работаем:</p>
+          <p>офис 9:00 до 18:00</p>
+          <p>склад 8:00 до 22:00</p>
+        </div>
+        <div class="footer__block footer__block--contacts">
+          <p class="footer__title">На связи даже по выходным:</p>
+          <a href="tel:+79253323253" class="footer__link">+7 (925) 332-32-53</a>
+          <a href="tel:+78005000642" class="footer__link">+7 (800) 5000-642</a>
+          <a href="mailto:sales@shinajcb.ru" class="footer__link">sales@shinajcb.ru</a>
+          <div class="social">
+            <p class="footer__title">Мы в социальных сетях:</p>
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="#" class="social__link" title="VKontakte"><i class="fab fa-vk"></i></a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link" title="Instagram"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link" title="Youtube"><i class="fab fa-youtube"></i></a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link" title="Twitter"><i class="fab fa-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <form action="#" class="subscribe">
+          <input type="text" class="subscribe__input" placeholder="Ваш e-mail">
+          <button type="submit" class="btn subscribe__btn">Подписаться на рассылку</button>
+          <p class="subscribe__comment">Отправляя форму, я даю согласие на <a href="#">обработку персональных данных</a>. Соглашаюсь с <a href="#">политикой конфиденциальности google</a> и <a href="#">с уловиями предоставления услуг сервисов google.</a></p>
+        </form>
+      </div>
+      <div class="footer__bottom">
+        <span>Шина JCB 2013 - 2021 гг.</span>
+        <ul class="payment">
+          <li><img src="img/icons/pay-visa.png" alt="Visa"></li>
+          <li><img src="img/icons/pay-mc.png" alt="MasterCard"></li>
+          <li><img src="img/icons/pay-card.png" alt="Bank"></li>
+          <li><img src="img/icons/pay-sber.png" alt="Sberbank"></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/promo-slider.js"></script>
+  <script src="js/mmenu.polyfills.js"></script>
+  <script src="js/mmenu.js"></script>
+  
+  <!-- Modal click -->
+  <script>
+    $('.hit__click').click(function() {
+      event.preventDefault();
+      $('.hit__modal').slideToggle();
+    });
+    $('.hit__close').click(function() {
+      $('.hit__modal').slideUp();
+    });
+    $('.hit__buy').click(function() {
+      event.preventDefault();
+      $('.hit__basket').slideToggle();
+    });
+    $('.hit__hide').click(function() {
+      $('.hit__basket').slideUp();
+    })
+  </script>
+</body>
+</html>
