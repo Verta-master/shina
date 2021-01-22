@@ -319,7 +319,9 @@
                     <a href="#" class="filter__show">Показать еще</a>
                   </div>
                 </div>
-                <a href="#" class="filter__clear">Очистить фильтр</a>
+                <div class="filter__btn">
+                  <a href="#" class="btn btn--grey filter__clear">Очистить фильтр</a>
+                </div>
               </form>
             </div>
           </aside>
@@ -759,6 +761,19 @@
     });
     $('.hit__hide').click(function() {
       $('.hit__basket').slideUp();
+    })
+  </script>
+  
+  <!-- Filter -->
+  <script>
+    $('.filter__show').click(function() {
+      event.preventDefault();
+      $(this).prev().toggleClass('filter__list--open');
+      $(this).toggleClass('filter__show--hide');
+    });
+    $('.filter__category').click(function() {
+      $(this).next().slideToggle();
+      $(this).toggleClass('filter__category--up');
     })
   </script>
 </body>
