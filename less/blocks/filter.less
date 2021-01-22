@@ -1,0 +1,113 @@
+.filter {
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+
+.filter__title {
+  margin: 0;
+  padding: 15px;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(34, 41, 54, .1);
+}
+
+.filter__field {
+  padding: 0 15px;
+  border-bottom: 1px solid rgba(34, 41, 54, .1);
+}
+
+.filter__category {
+  position: relative;
+  padding: 15px;
+  padding-left: 0;
+  cursor: pointer;
+  
+  &::after {
+    content: "\f106";
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    .transition();
+  }
+  
+  &--up::after {
+    transform: rotate(-180deg);
+    .transition();
+  }
+}
+
+.filter__drop {
+  padding-bottom: 15px;
+}
+
+.filter__line {
+  display: flex;
+  justify-content: space-between;
+  
+  .filter__input {
+    width: 48%;
+  }
+}
+
+.filter__input {
+  display: block;
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid rgba(34, 41, 54, .1);
+}
+
+.filter__list {
+  .reset();
+  list-style: none;
+  
+  &--open {
+    .filter__item {
+      &:nth-child(n + 4) {
+        display: block;
+      }
+    }
+  }
+}
+
+.filter__item {
+  &:nth-child(n + 4) {
+    display: none;
+  }
+}
+
+.filter__show {
+  position: relative;
+  display: block;
+  margin-top: 15px;
+  font-size: 13px;
+  color: @blue;
+  
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+  
+  &::after {
+    display: none;
+    content: "Скрыть";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    pointer-events: none;
+  }
+  
+  &--hide {
+    &::after {
+      display: block;
+    }
+  }
+}
+
+.filter__btn {
+  padding: 15px;
+  text-align: center;
+}

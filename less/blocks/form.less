@@ -73,3 +73,35 @@
     font-weight: 900;
   }
 }
+
+.checkbox {
+  display: none;
+}
+
+.checkbox-label {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-top: 10px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    line-height: 16px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 3px;
+    border: 1px solid rgb(34, 41, 54);
+  }
+}
+
+.checkbox:checked + .checkbox-label::before {
+  content: "\2713";
+  background-color: @blue;
+  border-color: @blue;
+}
