@@ -155,6 +155,7 @@
 }
 
 .hit__bottom {
+  position: relative;
   margin-top: auto;
 }
 
@@ -191,8 +192,8 @@
   display: none;
   position: absolute;
   bottom: 77px;
-  left: 0;
-  right: 0;
+  left: -20px;
+  right: -20px;
   z-index: 10;
   padding: 20px;
   background-color: #fff;
@@ -208,8 +209,8 @@
   display: none;
   position: absolute;
   bottom: 120px;
-  left: 0;
-  right: 0;
+  left: -20px;
+  right: -20px;
   z-index: 10;
   padding: 20px;
   color: #fff;
@@ -229,4 +230,107 @@
   text-align: center;
   margin-top: 40px;
   margin-bottom: 30px;
+}
+
+.hit__list--line {
+  display: block;
+  margin-right: 0;
+  
+  .hit__item {
+    width: 100%;
+    margin-right: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .hit__info {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    padding-top: 40px;
+  }
+  .hit__img {
+    width: 30%;
+    height: 250px;
+    padding-top: 40px;
+  }
+  .hit__text,
+  .hit__bottom {
+    width: 48%;
+  }
+  .hit__bottom {
+    margin-top: 0;
+  }
+  .hit__table {
+    margin-bottom: 0;
+    
+    tr:nth-child(n + 3) {
+      display: none;
+    }
+  }
+}
+
+.hit__list--table {
+  display: block;
+  margin-right: 0;
+  
+  .hit__item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .hit__info {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 0;
+    width: ~"calc(100% - 65px)";
+    padding: 0;
+  }
+  .hit__img {
+    width: 50px;
+    height: 50px;
+  }
+  .hit__brand,
+  .hit__table,
+  .hit__discount,
+  .hit__click,
+  .hit__userbtns,
+  .hit__labels {
+    display: none;
+  }
+  .hit__title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .hit__text {
+    width: 65%;
+    padding-right: 50px;
+  }
+  .hit__bottom {
+    width: 35%;
+    margin-top: 0;
+  }
+  .hit__form {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hit__buy {
+    width: 130px;
+    margin-top: 0;
+  }
+  .hit__price {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .hit__basket {
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }
