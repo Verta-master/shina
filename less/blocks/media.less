@@ -11,6 +11,12 @@
 }
 
 @media (max-width: 1200px) {
+  .catalog .info,
+  .catalog__links,
+  .sorting__view,
+  .sorting__number,
+  .catalog__service,
+  .sidebar,
   .menu {
     display: none;
   }
@@ -123,6 +129,13 @@
     line-height: 35px;
     font-size: 18px;
   }
+  .wrapper__content {
+    width: 100%;
+  }
+  .wrapper__columns {
+    display: block;
+  }
+  
 }
 
 @media (max-width: 1022px) {
@@ -188,6 +201,14 @@
   }
   .hit__labels {
     max-width: 150px;
+  }
+  .hit__item {
+    width: 49%;
+    margin-right: 0;
+  }
+  .hit__list {
+    margin-right: 0;
+    justify-content: space-between;
   }
 }
 
@@ -314,6 +335,7 @@
   .footer__block {
     width: 45%;
   }
+  .hit__item,
   .footer__block--contacts,
   .footer__block--address,
   .footer__block--brands .footer__nav li {
@@ -370,5 +392,54 @@
   }
   .promo__img {
     margin-bottom: 0;
+  }
+  h1,
+  .title-1 {
+    font-size: 26px;
+  }
+  .sidebar {
+    width: 100%;
+    display: block;
+    background-color: rgba(255,255,255,0);
+  }
+  .filter__mobile {
+    display: inline-block;
+    vertical-align: middle;
+    
+    &--close {
+      position: relative;
+      
+      &::after {
+        content: "Скрыть фильтр";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+        background-color: @blue;
+        pointer-events: none;
+        color: #fff;
+        line-height: 34px;
+        border-radius: 20px;
+      }
+    }
+  }
+  .filter__drop,
+  .filter__title,
+  .filter__form {
+    display: none;
+  }
+  .filter__category::after {
+    transform: rotate(-180deg);
+  }
+  .filter__form {
+    background-color: #fff;
+  }
+  .filter {
+    background-color: rgba(255,255,255,0);
+  }
+  .breadcrumbs__link {
+    font-size: 10px;
   }
 }

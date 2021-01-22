@@ -232,12 +232,13 @@
     
     <section class="catalog">
       <div class="wrapper">
-        <h1 class="title">Каталог шин для спецтехники</h1>
+        <h1 class="title-1">Каталог шин для спецтехники</h1>
         <a href="#" class="catalog__service">Монтаж-Демонтаж спецшин. С выездом <span>- 1</span></a>
         
         <div class="wrapper__columns">
           <aside class="sidebar">
             <div class="filter">
+              <button type="button" class="btn filter__mobile">Показать фильтр</button>
               <form action="#" class="filter__form">
                 <p class="filter__title">Фильтр по товарам:</p>
                 <div class="filter__field">
@@ -784,7 +785,13 @@
     $('.filter__category').click(function() {
       $(this).next().slideToggle();
       $(this).toggleClass('filter__category--up');
-    })
+    });
+    if (window.innerWidth < 481) {
+      $('.filter__mobile').click(function() {
+        $('.filter__form').slideToggle();
+        $(this).toggleClass('filter__mobile--close');
+      })
+    }
   </script>
   
   <!-- Catalog list view -->
