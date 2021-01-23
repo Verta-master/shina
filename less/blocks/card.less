@@ -91,6 +91,17 @@
     .transition();
   }
   
+  &::before {
+    content: "\f424";
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    pointer-events: none;
+  }
+  
   &:hover::after {
     opacity: 1;
     .transition();
