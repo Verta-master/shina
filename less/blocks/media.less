@@ -129,9 +129,12 @@
     line-height: 35px;
     font-size: 18px;
   }
+  .cart__left,
+  .cart__right,
   .wrapper__content {
     width: 100%;
   }
+  .cart__wrap,
   .wrapper__columns {
     display: block;
   }
@@ -150,6 +153,7 @@
   .catalog__links--card {
     display: flex;
   }
+  
 }
 
 @media (max-width: 1022px) {
@@ -276,6 +280,7 @@
   .hit__table {
     font-size: 10px;
   }
+  .cart__field .form__field,
   .card__view,
   .card__info,
   .goods__item,
@@ -343,11 +348,36 @@
     height: 25px;
     line-height: 25px;
   }
+  .card__field,
+  .cart__table,
+  .cart__table tbody,
+  .cart__table td,
   .card__block,
   .header__cart {
     display: block;
   }
-  
+  .cart__table tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(34, 41, 54,.1);
+  }
+  .cart__table td {
+    border-bottom: 0;
+  }
+  .cart__table td:nth-child(2) {
+    width: ~"calc(100% - 120px)";
+  }
+  .cart__sum {
+    font-size: 18px;
+  }
+  .cart__table td:last-child {
+    width: 100%;
+  }
+  .cart__table td:nth-child(3) {
+    margin-left: auto;
+  }
 }
 
 @media (max-width: 480px) {
