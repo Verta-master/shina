@@ -1,0 +1,154 @@
+.cart {
+  margin-bottom: 40px;
+  
+  .title-2 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+.cart__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart__left {
+  width: ~"calc(100% - 300px)";
+}
+
+.cart__right {
+  width: 280px;
+}
+
+.cart__table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  background-color: #fff;
+  .transition();
+  
+  td {
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(34, 41, 54,.1);
+  }
+  
+  td:nth-child(2) {
+    width: 50%;
+  }
+  td:last-child {
+    width: 35%;
+  }
+  
+  tr:last-child td {
+    border-bottom: 0;
+  }
+  
+  &:hover {
+    box-shadow: 0 10px 20px -5px rgba(54, 67, 94,.2);
+    .transition();
+  }
+}
+
+.cart__img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  
+  img {
+    max-height: 100%;
+  }
+}
+
+.cart__title {
+  display: block;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @blue;
+    .transition();
+  }
+}
+
+.cart__remove {
+  display: block;
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 12px;
+  .transition();
+  
+  &:hover {
+    color: red;
+    .transition();
+  }
+}
+
+.cart__price {
+  margin: 0;
+  font-weight: 700;
+  text-align: right;
+}
+
+.card__discount {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: rgb(23, 124, 25);
+  font-size: 12px;
+  text-align: right;
+  
+  span {
+    color: rgb(34, 41, 54);
+    text-decoration: line-through;
+  }
+}
+
+.cart__block {
+  padding: 20px;
+  background-color: #fff;
+  .transition();
+  
+  &:hover {
+    box-shadow: 0 10px 20px -5px rgba(54, 67, 94,.2);
+    .transition();
+  }
+}
+
+.card__field {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  .form__field {
+    width: 49%;
+  }
+}
+
+.cart__btn {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.cart__sum {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.cart__num {
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid rgba(34, 41, 54,.1);
+  border-bottom: 1px solid rgba(34, 41, 54,.1);
+}
+
+.cart__goods {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.cart__delivery {
+  margin: 0;
+}
