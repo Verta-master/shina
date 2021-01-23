@@ -2559,9 +2559,11 @@ sticky {
 }
 .cart__left {
   width: calc(100% - 300px);
+  margin-bottom: 20px;
 }
 .cart__right {
   width: 280px;
+  margin-bottom: 20px;
 }
 .cart__table {
   width: 100%;
@@ -2628,14 +2630,14 @@ sticky {
   font-weight: 700;
   text-align: right;
 }
-.card__discount {
+.cart__discount {
   margin-top: 0;
   margin-bottom: 5px;
   color: #177c19;
   font-size: 12px;
   text-align: right;
 }
-.card__discount span {
+.cart__discount span {
   color: #222936;
   text-decoration: line-through;
 }
@@ -2651,7 +2653,7 @@ sticky {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
-.card__field {
+.cart__field {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2661,7 +2663,7 @@ sticky {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.card__field .form__field {
+.cart__field .form__field {
   width: 49%;
 }
 .cart__btn {
@@ -2825,9 +2827,12 @@ sticky {
     line-height: 35px;
     font-size: 18px;
   }
+  .cart__left,
+  .cart__right,
   .wrapper__content {
     width: 100%;
   }
+  .cart__wrap,
   .wrapper__columns {
     display: block;
   }
@@ -2977,6 +2982,7 @@ sticky {
   .hit__table {
     font-size: 10px;
   }
+  .cart__field .form__field,
   .card__view,
   .card__info,
   .goods__item,
@@ -3057,9 +3063,42 @@ sticky {
     height: 25px;
     line-height: 25px;
   }
+  .card__field,
+  .cart__table,
+  .cart__table tbody,
+  .cart__table td,
   .card__block,
   .header__cart {
     display: block;
+  }
+  .cart__table tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-bottom: 1px solid rgba(34, 41, 54, 0.1);
+  }
+  .cart__table td {
+    border-bottom: 0;
+  }
+  .cart__table td:nth-child(2) {
+    width: calc(100% - 120px);
+  }
+  .cart__sum {
+    font-size: 18px;
+  }
+  .cart__table td:last-child {
+    width: 100%;
+  }
+  .cart__table td:nth-child(3) {
+    margin-left: auto;
   }
 }
 @media (max-width: 480px) {
