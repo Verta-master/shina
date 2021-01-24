@@ -2752,6 +2752,96 @@ sticky {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+.warranty {
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+.warranty .title-2 {
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.warranty__list,
+.warranty__outputs,
+.warranty__letters {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.warranty__letters {
+  padding: 10px 20px 5px 20px;
+  margin-top: 20px;
+  background-color: #fff;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.warranty__letters:hover {
+  -webkit-box-shadow: 0 10px 20px -5px rgba(54, 67, 94, 0.2);
+          box-shadow: 0 10px 20px -5px rgba(54, 67, 94, 0.2);
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.warranty__letter {
+  display: inline-block;
+  margin: 0 5px 5px 0;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  cursor: pointer;
+}
+.warranty__letter.is-checked {
+  color: #fff;
+  background: #4a7ba4;
+}
+.warranty__outputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.warranty__output {
+  width: 150px;
+  margin-right: 60px;
+  margin-bottom: 20px;
+}
+.warranty__link {
+  display: block;
+  text-align: center;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.warranty__link:hover,
+.warranty__link:active {
+  color: #4a7ba4;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.warranty__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 10px;
+}
+.warranty__img img {
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  max-height: 100%;
+}
+.warranty__title {
+  font-weight: 700;
+}
 @media (max-width: 1350px) {
   .wrapper {
     width: 100%;
@@ -2914,6 +3004,13 @@ sticky {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .warranty {
+    font-size: 15px;
+  }
+  .warranty__output {
+    width: 140px;
+    margin-right: 20px;
   }
 }
 @media (max-width: 1022px) {
