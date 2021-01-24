@@ -229,9 +229,12 @@
     margin-right: 0;
     justify-content: space-between;
   }
+  .contacts__wrap,
   .card__wrap {
     display: block;
   }
+  .contacts__map,
+  .contacts__info,
   .card__left,
   .card__right {
     width: 100%;
@@ -241,6 +244,27 @@
   }
   .card__right {
     margin-top: 20px;
+  }
+  .contacts__info {
+    margin-right: 0;
+    background-color: rgba(255,255,255,0);
+  }
+  .contacts__map {
+    min-height: 400px;
+    
+    iframe {
+      height: 400px;
+    }
+  }
+  .contacts__block {
+    margin-bottom: 20px;
+    background-color: #fff;
+    .transition();
+
+    &:hover {
+      box-shadow: 0 10px 20px -5px rgba(54, 67, 94,.2);
+      .transition();
+    }
   }
 }
 
@@ -503,5 +527,14 @@
   }
   .breadcrumbs__link {
     font-size: 10px;
+  }
+  .contacts__info {
+    font-size: 12px;
+  }
+  .contacts__link {
+    font-size: 15px;
+  }
+  .contacts__info .contacts__title {
+    margin-bottom: 5px;
   }
 }
