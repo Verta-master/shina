@@ -3189,6 +3189,10 @@ sticky {
     -webkit-transition: ease-out 0.3s;
     transition: ease-out 0.3s;
   }
+  .contacts__info:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
 @media (max-width: 766px) {
   .header__link--mail,
