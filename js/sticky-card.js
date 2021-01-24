@@ -1,6 +1,6 @@
 (function(){
   if (window.innerWidth > 1200) {
-    var a = document.querySelector('.cart__fixed'), b = null, P = 0;
+    var a = document.querySelector('.card__basket'), b = null, P = 0;
     window.addEventListener('scroll', Ascroll, false);
     document.body.addEventListener('scroll', Ascroll, false);
     function Ascroll() {
@@ -23,7 +23,7 @@
         a.style.border = '0';
       }
       var Ra = a.getBoundingClientRect(),
-          R = Math.round(Ra.top + b.getBoundingClientRect().height - document.querySelector('footer').getBoundingClientRect().bottom);  // селектор блока, при достижении нижнего края которого нужно открепить прилипающий элемент
+          R = Math.round(Ra.top + b.getBoundingClientRect().height - document.querySelector('.card__wrap').getBoundingClientRect().bottom);  // селектор блока, при достижении нижнего края которого нужно открепить прилипающий элемент
       if ((Ra.top - P) <= 0) {
         if ((Ra.top - P) <= R) {
           b.className = 'stop';
