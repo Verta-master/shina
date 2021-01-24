@@ -2800,6 +2800,7 @@ sticky {
   width: 35px;
   height: 35px;
   text-align: center;
+  font-size: 16px;
   line-height: 35px;
   cursor: pointer;
   -webkit-transition: ease-out 0.3s;
