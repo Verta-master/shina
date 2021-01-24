@@ -2842,6 +2842,40 @@ sticky {
 .warranty__title {
   font-weight: 700;
 }
+.delivery {
+  margin-bottom: 40px;
+}
+.delivery p span {
+  color: red;
+}
+.delivery .title-2 {
+  margin-bottom: 20px;
+}
+.delivery table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.delivery table th {
+  text-align: left;
+}
+.delivery table th:first-child {
+  font-weight: 400;
+}
+.delivery table td:first-child {
+  width: 40%;
+  font-size: 20px;
+}
+.delivery table td:nth-child(2) {
+  font-weight: 700;
+}
+.delivery table th,
+.delivery table td {
+  height: 40px;
+  padding: 10px;
+}
+.delivery table tr:nth-child(2n + 1) {
+  background: rgba(34, 41, 54, 0.05);
+}
 @media (max-width: 1350px) {
   .wrapper {
     width: 100%;
@@ -3283,6 +3317,12 @@ sticky {
   }
   .cart__table td:nth-child(3) {
     margin-left: auto;
+  }
+  .delivery {
+    font-size: 12px;
+  }
+  .delivery table td:first-child {
+    font-size: 15px;
   }
 }
 @media (max-width: 480px) {
