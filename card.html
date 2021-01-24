@@ -344,6 +344,19 @@
                 <a href="#" class="btn btn--white card__buy">В корзину</a>
                 <a href="#" class="btn btn--grey card__click">Купить в 1 клик</a>
               </form>
+              <div class="card__modal">
+                <button type="button" class="close card__close"><i class="fas fa-times"></i></button>
+                <p class="hit__top">Купить в 1 клик</p>
+                <form action="#" class="form">
+                  <label for="name" class="form__label">Имя:<span>*</span></label>
+                  <input type="text" id="name" class="form__input" placeholder="Введите текст" required="">
+                  <label for="tel" class="form__label">Телефон:<span>*</span></label>
+                  <input type="tel" id="tel" class="form__input" placeholder="+7 (000) 00-00-00" required="">
+                  <button type="submit" class="btn form__btn">Заказать</button>
+                  <p class="form__comment">Отправляя форму, я даю согласие на <a href="#">обработку персональных данных</a></p>
+                  <p class="form__comment"><span>*</span> Поля, обязательные для заполнения</p>
+                </form>
+              </div>
             </div>
           </aside>
         </div>
@@ -716,7 +729,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
   <script src="js/script.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="js/sticky-basket.js"></script>
+<!--  <script src="js/sticky-basket.js"></script>-->
 
   <!-- Tabs -->
   <script>
@@ -751,6 +764,17 @@
           spaceBetween: 10,
         }
       }
+    });
+  </script>
+  
+  <!-- Modal click -->
+  <script>
+    $('.card__click').click(function() {
+      event.preventDefault();
+      $('.card__modal').slideToggle();
+    });
+    $('.card__close').click(function() {
+      $('.card__modal').slideUp();
     });
   </script>
 </body>
