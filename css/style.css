@@ -2242,6 +2242,25 @@ a.breadcrumbs__link:active {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+.catalog .wrapper {
+  position: relative;
+}
+.wrapper__columns {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.sidebar {
+  position: sticky;
+  top: 80px;
+  height: 90vh;
+}
+@media (max-width: 1200px) {
+  .sidebar {
+    height: auto;
+    position: static;
+  }
+}
 .sidebar {
   width: 285px;
 }
