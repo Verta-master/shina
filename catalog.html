@@ -10,8 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
-  <link rel="stylesheet" href="css/mmenu.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="header">
@@ -328,6 +327,16 @@
           </aside>
           
           <div class="wrapper__content">
+            <div class="catalog__filters">
+              <a href="#" class="catalog__filter">Фильтры Фильтры воздушные</a>
+              <a href="#" class="catalog__filter">Фильтры Фильтры масляные</a>
+              <a href="#" class="catalog__filter">Фильтры Фильтры топливные</a>
+              <a href="#" class="catalog__filter">Фильтры Фильтры гидравлические</a>
+              <a href="#" class="catalog__filter">Фильтры Фильтры КПП</a>
+              <p>Фильтры, купить по выгодной цене от 800 руб до 110 600 руб в интернет магазине Шина JCB</p>
+              <p>В нашем магазине в наличии более 63 товаров.</p>
+            </div>
+            
             <div class="sorting">
               <div class="sorting__block">
                 <span class="sorting__text">Сортировка:</span>
@@ -642,7 +651,7 @@
         </div>
         
         <nav class="catalog__links">
-          <a href="#" class="catalog__link hidden">
+          <a href="#" class="catalog__link">
             <p class="catalog__text">К предыдущему элементу</p>
             <p class="catalog__page">Каталог шин для спецтехники</p>
           </a>
@@ -783,7 +792,7 @@
       $(this).next().slideToggle();
       $(this).toggleClass('filter__category--up');
     });
-    if (window.innerWidth < 481) {
+    if (window.innerWidth < 1200) {
       $('.filter__mobile').click(function() {
         $('.filter__form').slideToggle();
         $(this).toggleClass('filter__mobile--close');
