@@ -1,5 +1,6 @@
 .header {
   background-color: rgba(74, 123, 164, 0.01);
+  .transition();
   
   &--scroll {
     position: fixed;
@@ -7,7 +8,9 @@
     left: 0;
     right: 0;
     z-index: 1000;
+    .transition();
     
+    .header__top .header__banner,
     .header__address,
     .header__title,
     .search,
@@ -16,20 +19,24 @@
     .header__icon--compare {
       display: none;
     }
-    .header__top {
+    .header__top .wrapper {
       padding: 0;
+      .transition();
     }
     .header__bottom {
       background-color: #fff;
       box-shadow: 0 1px 5px rgba(34, 41, 54,.1);
+      .transition();
       
       .wrapper {
         padding-right: 150px;
+        .transition();
       }
     }
     .header__phone,
     .header__link {
       margin: 0;
+      .transition();
     }
     .header__icon--basket {
       position: absolute;
@@ -37,6 +44,7 @@
       right: 0;
       z-index: 1100;
       color: rgb(34, 41, 54);
+      .transition();
     }
     .header__user {
       position: static;
@@ -99,18 +107,21 @@
 }
 
 .header__top {
-  padding-top: 9px;
-  padding-bottom: 9px;
-  background-color: rgb(74, 123, 164);
+  .transition();
   
   .wrapper {
     position: relative;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    background-color: rgb(74, 123, 164);
+    .transition();
   }
 }
 
 .header__bottom {
   padding-top: 10px;
   padding-bottom: 10px;
+  .transition();
 }
 
 .header__list {
@@ -197,6 +208,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-right: 10px;
 }
 
 .header__icon {
@@ -277,4 +289,12 @@
     color: @blue;
     .transition();
   }
+}
+
+.header__menu {
+  margin-left: 80px;
+}
+
+.header__top .header__banner {
+  padding-bottom: 0;
 }
