@@ -1,7 +1,7 @@
 //Header basket
 $('.header__icon--basket').click(function() {
   event.preventDefault();
-  $('.header__drop').slideToggle();
+  $(this).next().slideToggle();
 })
 
 $('.header__close').click(function() {
@@ -11,14 +11,14 @@ $('.header__close').click(function() {
 //Header scroll
 if (window.innerWidth > 1200) {
   $(window).scroll(function(){
-    if ((window.pageYOffset || document.documentElement.scrollTop ||document.body.scrollTop) >= 100) {
-      $('.header').addClass('header--scroll');
+    if ((window.pageYOffset || document.documentElement.scrollTop ||document.body.scrollTop) >= 200) {
+      $('.header-scroll').addClass('header-scroll--show');
     } else {
-      $('.header').removeClass('header--scroll');
+      $('.header-scroll').removeClass('header-scroll--show');
     };
   })
 } else {
-  $('.header').addClass('header--mobile');
+  $('.header-scroll').addClass('header-scroll--show');
 }
 
 //Search
