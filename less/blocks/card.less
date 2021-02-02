@@ -1,5 +1,9 @@
 .card {
   margin-bottom: 40px;
+  
+  .wrapper {
+    position: relative;
+  }
 }
 
 .card__block,
@@ -8,11 +12,18 @@
   justify-content: space-between;
 }
 
+.card__wrap {
+  align-items: flex-start;
+}
+
 .card__left {
   width: ~"calc(100% - 400px)";
 }
 
 .card__right {
+  position: sticky;
+  top: 80px;
+  right: 0;
   width: 380px;
 }
 

@@ -8,6 +8,13 @@
   .header--scroll .header__icon--basket {
     right: 30px;
   }
+  .promo__block {
+    padding: 0;
+    padding-bottom: 10px;
+  }
+  .promo__slider .swiper-wrapper {
+    justify-content: space-between;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -16,7 +23,6 @@
   .sorting__view,
   .sorting__number,
   .catalog__service,
-  .sidebar,
   .menu {
     display: none;
   }
@@ -78,14 +84,14 @@
     margin-bottom: 20px;
     font-size: 22px;
   }
-  .finder__link {
+  .finder__slide {
     padding: 15px;
   }
   .finder__img {
     height: 77px;
   }
   .finder__tag,
-  .finder__link {
+  .finder__slide {
     font-size: 15px;
   }
   .goods__item:nth-child(2) .goods__sublist li,
@@ -168,6 +174,61 @@
   .hit__prev {
     left: -15px;
   }
+  .filter__mobile {
+    display: inline-block;
+    vertical-align: middle;
+    
+    &--close {
+      position: relative;
+      
+      &::after {
+        content: "Скрыть фильтр";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+        background-color: @blue;
+        pointer-events: none;
+        color: #fff;
+        line-height: 34px;
+        border-radius: 20px;
+      }
+    }
+  }
+  .sidebar {
+    width: 100%;
+    display: block;
+    background-color: rgba(255,255,255,0);
+  }
+  .filter__drop,
+  .filter__title,
+  .filter__form {
+    display: none;
+  }
+  .filter__category::after {
+    transform: rotate(-180deg);
+  }
+  .filter__form {
+    background-color: #fff;
+  }
+  .filter {
+    background-color: rgba(255,255,255,0);
+  }
+  .hit__slider,
+  .promo__slider {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .header-basket + main {
+    padding-top: 0;
+  }
+  .cart__right {
+    position: static;
+  }
 }
 
 @media (max-width: 1022px) {
@@ -176,7 +237,7 @@
   }
   .search__input,
   body,
-  .finder__link,
+  .finder__slide,
   .finder__tag,
   .promo__text,
   .header--mobile .header__link,
@@ -203,7 +264,7 @@
   .promo__block {
     padding-bottom: 0;
   }
-  .finder__link {
+  .finder__slide {
     padding: 15px 10px;
   }
   .goods__item {
@@ -258,6 +319,7 @@
   }
   .card__right {
     margin-top: 20px;
+    position: static;
   }
   .contacts__info {
     margin-right: 0;
@@ -301,7 +363,7 @@
   .btn,
   .header--mobile .header__link,
   .hit__discount,
-  .finder__link,
+  .finder__slide,
   .finder__tag {
     font-size: 12px;
   }
@@ -320,6 +382,15 @@
   }
   .hit__table {
     font-size: 10px;
+  }
+  .hit__table td {
+    padding-right: 0;
+  }
+  .hit__table td:last-child {
+    padding-left: 0;
+  }
+  .hit__img {
+    height: 175px;
   }
   .cart__field .form__field,
   .card__view,
@@ -425,9 +496,38 @@
   .delivery table td:first-child {
     font-size: 15px;
   }
+  .header__back {
+    order: 3;
+    margin-left: 20px;
+  }
+  .header-basket .header__block {
+    order: 4;
+    align-self: center;
+    
+    .header__phone:last-of-type {
+      font-size: 12px;
+      margin-top: 0;
+    }
+    
+    &::before {
+      top: 0;
+      font-size: 14px;
+    }
+  }
+  .header-basket .header__bottom {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .header-basket .logo {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 480px) {
+  .wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .header--mobile .header__phone {
     font-size: 12px;
     right: 55px;
@@ -454,9 +554,13 @@
     padding-left: 5px;
     padding-right: 5px;
   }
+  .header__back,
   .promo__text,
   .subscribe {
     display: none;
+  }
+  .header-basket .logo {
+    margin-right: auto;
   }
   .footer__bottom {
     display: block;
@@ -498,48 +602,6 @@
   .title-1 {
     font-size: 26px;
   }
-  .sidebar {
-    width: 100%;
-    display: block;
-    background-color: rgba(255,255,255,0);
-  }
-  .filter__mobile {
-    display: inline-block;
-    vertical-align: middle;
-    
-    &--close {
-      position: relative;
-      
-      &::after {
-        content: "Скрыть фильтр";
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        text-align: center;
-        background-color: @blue;
-        pointer-events: none;
-        color: #fff;
-        line-height: 34px;
-        border-radius: 20px;
-      }
-    }
-  }
-  .filter__drop,
-  .filter__title,
-  .filter__form {
-    display: none;
-  }
-  .filter__category::after {
-    transform: rotate(-180deg);
-  }
-  .filter__form {
-    background-color: #fff;
-  }
-  .filter {
-    background-color: rgba(255,255,255,0);
-  }
   .breadcrumbs__link {
     font-size: 10px;
   }
@@ -551,5 +613,12 @@
   }
   .contacts__info .contacts__title {
     margin-bottom: 5px;
+  }
+  .hit__slider,
+  .promo__slider {
+    padding-bottom: 0;
+  }
+  .finder__slide {
+    padding: 15px 5px;
   }
 }

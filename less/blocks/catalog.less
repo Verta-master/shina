@@ -33,6 +33,7 @@
 .catalog__link {
   display: block;
   flex-grow: 1;
+  min-width: ~"calc(50% - 10px)";
   margin-right: 10px;
   padding: 15px 20px;
   background-color: #fff;
@@ -57,4 +58,27 @@
 
 .hidden {
   display: none;
+}
+
+.catalog__filters {
+  margin-bottom: 40px;
+}
+
+.catalog__filter {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 3px 10px;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  background-color: rgba(255, 127, 0,.81);
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: rgba(74, 123, 164,1);
+    background-color: rgba(54, 67, 94,.15);
+    box-shadow: 0 10px 20px -5px rgba(54, 67, 94,.2);
+    .transition();
+  }
 }

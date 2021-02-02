@@ -54,6 +54,41 @@
   }
 }
 
+.header-basket {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(34, 41, 54,.1);
+
+  .header__bottom {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .header__block {
+    position: relative;
+    padding-left: 21px;
+    font-size: 16px;
+    .transition();
+
+    &::before {
+      content: "\f879";
+      position: absolute;
+      top: 5px;
+      left: 0;
+      font-family: "Font Awesome 5 Free"; 
+      font-weight: 900;
+    }
+
+    &:hover {
+      color: @blue;
+      .transition();
+
+      .header__phone {
+        color: @blue;
+      }
+    }
+  }
+}
+
 .header__top,
 .header__bottom {
   .wrapper {
@@ -230,4 +265,16 @@
 
 .header__mobile {
   display: none;
+}
+
+.header__back {
+  .transition();
+  margin-right: auto;
+  margin-left: 30px;
+  
+  &:hover,
+  &:active {
+    color: @blue;
+    .transition();
+  }
 }

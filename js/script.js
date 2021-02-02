@@ -12,13 +12,13 @@ $('.header__close').click(function() {
 if (window.innerWidth > 1200) {
   $(window).scroll(function(){
     if ((window.pageYOffset || document.documentElement.scrollTop ||document.body.scrollTop) >= 100) {
-      $('header').addClass('header--scroll');
+      $('.header').addClass('header--scroll');
     } else {
-      $('header').removeClass('header--scroll');
+      $('.header').removeClass('header--scroll');
     };
   })
 } else {
-  $('header').addClass('header--mobile');
+  $('.header').addClass('header--mobile');
 }
 
 //Search

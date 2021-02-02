@@ -58,24 +58,33 @@ button {
 
 .privacy_policy {    
 	padding: 10px;
-	border-top:3px solid #5CA94E;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    z-index: 500;
-    left: 0;
-    right: 0;
-    background: #ffffff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 500;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  box-shadow: 0 10px 20px -5px rgba(54, 67, 94,.2);
 }
 
 .privacy_policy a {
-	color: #5CA94E; 
+	color: @blue; 
 	font-weight: bold;
 }
 
 .privacy_policy .button {
-	color: #F95454;
+	padding: 10px 20px;
+  color: #fff;
+  text-align: center;
+  color: @blue;
+  background-color:  rgba(74, 123, 164, 0.1);
 	cursor: pointer;
+  
+  &:hover,
+  &:active {
+    background-color:  rgba(74, 123, 164, 0.2);
+  }
 }
 
 h1,

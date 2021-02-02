@@ -10,8 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
-  <link rel="stylesheet" href="css/mmenu.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="header">
@@ -92,7 +91,7 @@
     </div>
     <div class="header__bottom">
       <div class="wrapper">
-        <a href="#menu" class="header__mobile"><i class="fas fa-bars"></i></a>
+        <button type="button" class="menu-btn header__mobile"><i class="fas fa-bars"></i></button>
         <div class="logo">
           <img src="img/images/logo.webp" alt="Logo">
         </div>
@@ -222,42 +221,6 @@
     </div>
   </nav>
   
-<!--
-  <div id="page">
-    <nav id="menu">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li>
-          <span>About us</span>
-          <ul>
-            <li><a href="#about/history">History</a></li>
-            <li>
-              <span>The team</span>
-              <ul>
-                <li>
-                  <a href="#about/team/management">Management</a>
-                </li>
-                <li>
-                  <a href="#about/team/sales">Sales</a>
-                </li>
-                <li>
-                  <a href="#about/team/development">Development</a>
-                </li>
-              </ul>
-            </li>
-            <li><a href="#about/address">Our address</a></li>
-          </ul>
-        </li>
-        <li><a href="#contact">Contact</a></li>
-
-        <li class="Divider">Other demos</li>
-        <li><a href="advanced.html">Advanced demo</a></li>
-        <li><a href="onepage.html">One page demo</a></li>
-      </ul>
-    </nav>
-  </div>
--->
-  
   <main>
     <section class="promo">
       <div class="wrapper">
@@ -305,63 +268,49 @@
       <div class="wrapper">
         <h2 class="title-2">Подбор шин для спецтехники</h2>
         <div class="finder__wrap">
-          <div class="swiper-container finder__slider">
+          <div class="swiper-container finder__slider tabs-buttons">
             <div class="swiper-wrapper">
-              <div class="swiper-slide finder__slide">
-                <a href="#" class="finder__link">
+              <div class="swiper-slide finder__slide active-tab">
                   <figure class="finder__img">
                     <img src="img/icons/20972_ekskavator-pogruzchik.png" alt="Экскаватор-погрузчик">
                   </figure>
                   <p>Экскаватор-погрузчик</p>
-                </a>
               </div>
               <div class="swiper-slide finder__slide">
-                <a href="#" class="finder__link">
                   <figure class="finder__img">
                     <img src="img/icons/20973_mini-pogruzchik.png" alt="Мини погрузчик">
                   </figure>
                   <p>Мини погрузчик</p>
-                </a>
               </div>
               <div class="swiper-slide finder__slide">
-                <a href="#" class="finder__link">
                   <figure class="finder__img">
                     <img src="img/icons/20974_vilochnyy-pogruzchik.png" alt="Вилочный погрузчик">
                   </figure>
                   <p>Вилочный погрузчик</p>
-                </a>
               </div>
               <div class="swiper-slide finder__slide">
-                <a href="#" class="finder__link">
                   <figure class="finder__img">
                     <img src="img/icons/20975_teleskopicheskiy-pogruzchik.png" alt="Телескопический погрузчик">
                   </figure>
                   <p>Телескопический погрузчик</p>
-                </a>
               </div>
               <div class="swiper-slide finder__slide">
-                <a href="#" class="finder__link">
                   <figure class="finder__img">
                     <img src="img/icons/20976_frontalnyy-pogruzchik.png" alt="Фронтальный погрузчик">
                   </figure>
                   <p>Фронтальный погрузчик</p>
-                </a>
               </div>
               <div class="swiper-slide finder__slide">
-                <a href="#" class="finder__link">
                   <figure class="finder__img">
                     <img src="img/icons/20977_ekskavator.png" alt="Экскаватор">
                   </figure>
                   <p>Экскаватор</p>
-                </a>
               </div>
               <div class="swiper-slide finder__slide">
-                <a href="#" class="finder__link">
                   <figure class="finder__img">
                     <img src="img/icons/20978_sochlenyonnyy-samosval.png" alt="Сочленённый самосвал">
                   </figure>
                   <p>Сочленённый самосвал</p>
-                </a>
               </div>
             </div>
           </div>
@@ -369,44 +318,110 @@
           <div class="swiper-button-next finder__next"><i class="fas fa-chevron-right"></i></div>
         </div>
         <p class="finder__subtitle">Размер шин:</p>
-        <ul class="finder__list">
-          <li class="finder__item">
-            <a href="#" class="finder__tag">Шины 10.5/80-18</a>
-          </li>
-          <li class="finder__item">
-            <a href="#" class="finder__tag">Шины 12.5/80-18 (320/80-18)</a>
-          </li>
-          <li class="finder__item">
-            <a href="#" class="finder__tag">Шины 12.5-20 (340/80-20)</a>
-          </li>
-          <li class="finder__item">
-            <a href="#" class="finder__tag">Шины 16.0/70-20 (405/70-20)</a>
-          </li>
-          <li class="finder__item">
-            <a href="#" class="finder__tag">Шины 16.9-28 (440/80-28)</a>
-          </li>
-          <li class="finder__item">
-            <a href="#" class="finder__tag">Шины 18.4-26 (480/80-26)</a>
-          </li>
-          <li class="finder__item">
-            <a href="#" class="finder__tag">Шины 16.9-24</a>
-          </li>
-          <li class="finder__item">
-            <a href="#" class="finder__tag">Шины 17.5L-24</a>
-          </li>
-          <li class="finder__item">
-            <a href="#" class="finder__tag">Шины 19.5L-24</a>
-          </li>
-          <li class="finder__item">
-            <a href="#" class="finder__tag">Шины 21L-24</a>
-          </li>
-          <li class="finder__item">
-            <a href="#" class="finder__tag">Шины 16.9-30</a>
-          </li>
-          <li class="finder__item">
-            <a href="#" class="finder__tag">Шины 18.4-28</a>
-          </li>
-        </ul>
+        <div class="swiper-container tabs-content">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <ul class="finder__list">
+                <li class="finder__item">
+                  <a href="#" class="finder__tag">Шины 10.5/80-18</a>
+                </li>
+                <li class="finder__item">
+                  <a href="#" class="finder__tag">Шины 12.5/80-18 (320/80-18)</a>
+                </li>
+                <li class="finder__item">
+                  <a href="#" class="finder__tag">Шины 12.5-20 (340/80-20)</a>
+                </li>
+                <li class="finder__item">
+                  <a href="#" class="finder__tag">Шины 16.0/70-20 (405/70-20)</a>
+                </li>
+                <li class="finder__item">
+                  <a href="#" class="finder__tag">Шины 16.9-28 (440/80-28)</a>
+                </li>
+                <li class="finder__item">
+                  <a href="#" class="finder__tag">Шины 18.4-26 (480/80-26)</a>
+                </li>
+                <li class="finder__item">
+                  <a href="#" class="finder__tag">Шины 16.9-24</a>
+                </li>
+                <li class="finder__item">
+                  <a href="#" class="finder__tag">Шины 17.5L-24</a>
+                </li>
+                <li class="finder__item">
+                  <a href="#" class="finder__tag">Шины 19.5L-24</a>
+                </li>
+                <li class="finder__item">
+                  <a href="#" class="finder__tag">Шины 21L-24</a>
+                </li>
+                <li class="finder__item">
+                  <a href="#" class="finder__tag">Шины 16.9-30</a>
+                </li>
+                <li class="finder__item">
+                  <a href="#" class="finder__tag">Шины 18.4-28</a>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <ul class="finder__list">
+                <li class="finder__item">
+                  <a href="#" class="finder__tag">Шины 10.5/80-18</a>
+                </li>
+                <li class="finder__item">
+                  <a href="#" class="finder__tag">Шины 12.5/80-18 (320/80-18)</a>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <ul class="finder__list">
+                <li class="finder__item">
+                  <a href="#" class="finder__tag">Шины 10.5/80-18</a>
+                </li>
+                <li class="finder__item">
+                  <a href="#" class="finder__tag">Шины 12.5/80-18 (320/80-18)</a>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <ul class="finder__list">
+                <li class="finder__item">
+                  <a href="#" class="finder__tag">Шины 10.5/80-18</a>
+                </li>
+                <li class="finder__item">
+                  <a href="#" class="finder__tag">Шины 12.5/80-18 (320/80-18)</a>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <ul class="finder__list">
+                <li class="finder__item">
+                  <a href="#" class="finder__tag">Шины 10.5/80-18</a>
+                </li>
+                <li class="finder__item">
+                  <a href="#" class="finder__tag">Шины 12.5/80-18 (320/80-18)</a>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <ul class="finder__list">
+                <li class="finder__item">
+                  <a href="#" class="finder__tag">Шины 10.5/80-18</a>
+                </li>
+                <li class="finder__item">
+                  <a href="#" class="finder__tag">Шины 12.5/80-18 (320/80-18)</a>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <ul class="finder__list">
+                <li class="finder__item">
+                  <a href="#" class="finder__tag">Шины 10.5/80-18</a>
+                </li>
+                <li class="finder__item">
+                  <a href="#" class="finder__tag">Шины 12.5/80-18 (320/80-18)</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     
@@ -952,40 +967,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/promo-slider.js"></script>
-  <script src="js/mmenu.polyfills.js"></script>
-  <script src="js/mmenu.js"></script>
+  <script src="js/finder-tabs.js"></script>
   
   <!-- Sliders -->
   <script>
-    var mySwiper1 = new Swiper ('.finder__slider', {
-      navigation: {
-        nextEl: '.finder__next',
-        prevEl: '.finder__prev',
-      },
-      simulateTouch: false,
-      preventClicks: false,
-      preventClicksPropagation: false,
-      slidesPerView: 6,
-      spaceBetween: 20,
-      breakpoints: {
-        1200: {
-          spaceBetween: 10,
-        },
-        1022: {
-          slidesPerView: 5,
-          spaceBetween: 10,
-        },
-        766: {
-          slidesPerView: 3,
-          spaceBetween: 10,
-        },
-        480: {
-          slidesPerView: 2,
-          spaceBetween: 10,
-        }
-      }
-    });
-    
     var mySwiper2 = new Swiper ('.hit__slider', {
       navigation: {
         nextEl: '.hit__next',
@@ -1005,7 +990,7 @@
           slidesPerView: 2,
           spaceBetween: 10,
         },
-        480: {
+        370: {
           slidesPerView: 1,
           spaceBetween: 10,
         }
@@ -1029,19 +1014,6 @@
     $('.hit__hide').click(function() {
       $('.hit__basket').slideUp();
     })
-  </script>
-  
-  <!-- Mobile menu plugin -->
-  <script>
-    new Mmenu(document.querySelector('#menu'));
-
-    document.addEventListener('click', function (evnt) {
-      var anchor = evnt.target.closest('a[href^="#/"]');
-      if (anchor) {
-        alert("Thank you for clicking, but that's a demo link.");
-        evnt.preventDefault();
-      }
-    });
   </script>
 </body>
 </html>

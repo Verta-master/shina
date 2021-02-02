@@ -5,11 +5,16 @@
     margin-top: 20px;
     margin-bottom: 15px;
   }
+  
+  .wrapper {
+    position: relative;
+  }
 }
 
 .cart__wrap {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .cart__left {
@@ -18,6 +23,8 @@
 }
 
 .cart__right {
+  position: sticky;
+  top: 0;
   width: 280px;
   margin-bottom: 20px;
 }

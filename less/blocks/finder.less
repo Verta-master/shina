@@ -9,23 +9,16 @@
 .finder__slider {
   box-sizing: border-box;
   padding-bottom: 20px;
+  
+  .active-tab {
+    box-shadow: 0 10px 20px -5px rgba(54, 67, 94,.2);
+  }
 }
 
 .finder__slide {
   height: auto;
   box-sizing: border-box;
-  .transition();
-  
-  &:hover,
-  &:active {
-    box-shadow: 0 10px 20px -5px rgba(54, 67, 94,.2);
-    .transition();
-  }
-}
-
-.finder__link {
-  display: block;
-  height: 100%;
+  cursor: pointer;
   padding: 25px 20px;
   font-size: 17px;
   text-align: center;
@@ -33,6 +26,13 @@
   
   p {
     margin: 0;
+  }
+  .transition();
+  
+  &:hover,
+  &:active {
+    box-shadow: 0 10px 20px -5px rgba(54, 67, 94,.2);
+    .transition();
   }
 }
 
