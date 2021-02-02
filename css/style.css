@@ -2872,7 +2872,6 @@ sticky {
 .contacts__info {
   width: 400px;
   margin-right: 20px;
-  font-size: 20px;
   background-color: #fff;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
@@ -2909,6 +2908,7 @@ sticky {
 .contacts__link {
   display: block;
   margin-bottom: 5px;
+  font-size: 20px;
   font-weight: 700;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
