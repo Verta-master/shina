@@ -2031,6 +2031,9 @@ h3,
   text-decoration: none;
   color: #4a7ba4;
 }
+.header__drop {
+  height: 400px;
+}
 .basket__title {
   margin-top: 0;
   margin-bottom: 0;
