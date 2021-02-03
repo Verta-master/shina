@@ -320,9 +320,64 @@
           <div class="card__left">
             <section class="card__block">
               <div class="card__view">
-                <a data-fancybox="gallery" href="img/images/21733_16070-r20-starmaxx-stx-nd31-shina-pnevm.webp" class="card__img">
-                  <img src="img/images/21733_16070-r20-starmaxx-stx-nd31-shina-pnevm.webp" alt="16.0/70 R20 Starmaxx STX ND31 шина пневматическая">
-                </a>
+                <div class="swiper-container gallery-top">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide gallery-slide">
+                      <a data-fancybox="gallery" href="img/images/21733_16070-r20-starmaxx-stx-nd31-shina-pnevm.webp" class="card__img">
+                        <img src="img/images/21733_16070-r20-starmaxx-stx-nd31-shina-pnevm.webp" alt="16.0/70 R20 Starmaxx STX ND31 шина пневматическая">
+                      </a>
+                    </div>
+                    <div class="swiper-slide gallery-slide">
+                      <a data-fancybox="gallery" href="img/images/21733_16070-r20-starmaxx-stx-nd31-shina-pnevm.webp" class="card__img">
+                        <img src="img/images/21733_16070-r20-starmaxx-stx-nd31-shina-pnevm.webp" alt="16.0/70 R20 Starmaxx STX ND31 шина пневматическая">
+                      </a>
+                    </div>
+                    <div class="swiper-slide gallery-slide">
+                      <a data-fancybox="gallery" href="img/images/21733_16070-r20-starmaxx-stx-nd31-shina-pnevm.webp" class="card__img">
+                        <img src="img/images/21733_16070-r20-starmaxx-stx-nd31-shina-pnevm.webp" alt="16.0/70 R20 Starmaxx STX ND31 шина пневматическая">
+                      </a>
+                    </div>
+                    <div class="swiper-slide gallery-slide">
+                      <a data-fancybox="gallery" href="img/images/21733_16070-r20-starmaxx-stx-nd31-shina-pnevm.webp" class="card__img">
+                        <img src="img/images/21733_16070-r20-starmaxx-stx-nd31-shina-pnevm.webp" alt="16.0/70 R20 Starmaxx STX ND31 шина пневматическая">
+                      </a>
+                    </div>
+                    <div class="swiper-slide gallery-slide">
+                      <a data-fancybox="gallery" href="img/images/21733_16070-r20-starmaxx-stx-nd31-shina-pnevm.webp" class="card__img">
+                        <img src="img/images/21733_16070-r20-starmaxx-stx-nd31-shina-pnevm.webp" alt="16.0/70 R20 Starmaxx STX ND31 шина пневматическая">
+                      </a>
+                    </div>
+                    <div class="swiper-slide gallery-slide">
+                      <a data-fancybox="gallery" href="img/images/21733_16070-r20-starmaxx-stx-nd31-shina-pnevm.webp" class="card__img">
+                        <img src="img/images/21733_16070-r20-starmaxx-stx-nd31-shina-pnevm.webp" alt="16.0/70 R20 Starmaxx STX ND31 шина пневматическая">
+                      </a>
+                    </div>
+                  </div>
+                <div class="swiper-button-prev gallery-prev"><i class="fas fa-chevron-left"></i></div>
+                <div class="swiper-button-next gallery-next"><i class="fas fa-chevron-right"></i></div>
+                </div>
+                <div class="swiper-container gallery-thumbs">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide gallery-thumb">
+                      <img src="img/images/21733_16070-r20-starmaxx-stx-nd31-shina-pnevm.webp" alt="16.0/70 R20 Starmaxx STX ND31 шина пневматическая">
+                    </div>
+                    <div class="swiper-slide gallery-thumb">
+                      <img src="img/images/21733_16070-r20-starmaxx-stx-nd31-shina-pnevm.webp" alt="16.0/70 R20 Starmaxx STX ND31 шина пневматическая">
+                    </div>
+                    <div class="swiper-slide gallery-thumb">
+                      <img src="img/images/21733_16070-r20-starmaxx-stx-nd31-shina-pnevm.webp" alt="16.0/70 R20 Starmaxx STX ND31 шина пневматическая">
+                    </div>
+                    <div class="swiper-slide gallery-thumb">
+                      <img src="img/images/21733_16070-r20-starmaxx-stx-nd31-shina-pnevm.webp" alt="16.0/70 R20 Starmaxx STX ND31 шина пневматическая">
+                    </div>
+                    <div class="swiper-slide gallery-thumb">
+                      <img src="img/images/21733_16070-r20-starmaxx-stx-nd31-shina-pnevm.webp" alt="16.0/70 R20 Starmaxx STX ND31 шина пневматическая">
+                    </div>
+                    <div class="swiper-slide gallery-thumb">
+                      <img src="img/images/21733_16070-r20-starmaxx-stx-nd31-shina-pnevm.webp" alt="16.0/70 R20 Starmaxx STX ND31 шина пневматическая">
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="card__info">
                 <h1 class="title-2">16.0/70 R20 Starmaxx STX ND31 шина пневматическая</h1>
@@ -845,6 +900,24 @@
           slidesPerView: 1,
           spaceBetween: 10,
         }
+      }
+    });
+    
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.gallery-next',
+        prevEl: '.gallery-prev',
+      },
+      thumbs: {
+        swiper: galleryThumbs
       }
     });
   </script>
