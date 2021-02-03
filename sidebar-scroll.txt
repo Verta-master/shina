@@ -1,0 +1,31 @@
+1) Добавить стили:
+
+.catalog .wrapper {
+  position: relative;
+}
+.wrapper__columns {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80px;
+  height: 90vh;
+}
+@media (max-width: 1200px) {
+  .sidebar {
+    height: auto;
+    position: static;
+  }
+}
+
+2) Добавить прокрутку:
+
+<script src="js/jquery.nicescroll.min.js"></script>
+  
+  <!-- Scroll sidebar -->
+  <script>
+    $('.sidebar').niceScroll();
+  </script>
